@@ -1,33 +1,47 @@
-const t = await Deno.readTextFile("./data.txt");
+const t = await Deno.readTextFile("2022/day-7/data.txt");
 
 const array: string[] = t.split("\n");
 console.log(array.length);
-console.log(array);
 
-let obj: Record<string, any> = {};
-
-let c: { dirs: any[]; files: any[] } = { dirs: [], files: [] };
-for (let i = 0; i < array.length; i++) {
-  if (array[i].includes("cd ")) {
-    const n = array[i].replace("cd ", "");
-
-    if (obj[n]) {
-    } else {
-      obj[n] = c;
-    }
-  } else {
-    if (!array[i].includes("ls")) {
-      if (array[i].includes("dir ")) {
-        console.log(array[i], c);
-        c.dirs.push(array[i].replace("dir ", ""));
-      }
-      if (!array[i].includes("dir ")) {
-        c.files.push(array[i].split(" ")[0]);
-      }
-    }
+class Node {
+  name: string;
+  parent: Node | null;
+  isDirectory: boolean;
+  size: number;
+  children: Map<string, Node>;
+  constructor(name: string, isDirectory: boolean) {
+    this.name = name;
+    this.isDirectory = isDirectory;
+    this.parent = null;
+    this.size = 0;
+    this.children = new Map();
   }
 }
-console.log(obj);
+const arr: string[] = [];
+const rootNode = new Node("/", true);
+let currentPosition = rootNode;
+
+for (const line of array) {
+  if (line.at(0) === "$") {
+    // ! this is a command
+    const [_dollarSign, command, argument] = line.split(" ");
+    if (command === "cd") {
+      if (argument === "..") {
+        currentPosition = currentPosition.parent as Node;
+      } else if (argument === "/") {
+        currentPosition = rootNode;
+      } else {
+        if (currentPosition.children.has(argument)) {
+          currentPosition = currentPosition.children.get(argument) as Node;
+        }
+      }
+    }
+  } else {
+    // ! this is not a command, but probs dir/file name line
+  }
+}
+
+console.log(arr);
 /** already answered
  *
  *
