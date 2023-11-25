@@ -1,0 +1,3299 @@
+964
+>>>> 42805968
+<ref *1> Node {
+  name: "/",
+  parent: null,
+  isDirectory: true,
+  size: 42805968,
+  children: Map(9) {
+    "cmwrq" => <ref *2> Node {
+      name: "cmwrq",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 10449487,
+      children: Map(7) {
+        "dtbzzl" => <ref *3> Node {
+          name: "dtbzzl",
+          parent: [Circular *2],
+          isDirectory: true,
+          size: 2919892,
+          children: Map(2) {
+            "ljhpmvd.zqf" => Node {
+              name: "ljhpmvd.zqf",
+              parent: [Circular *3],
+              isDirectory: false,
+              size: 42503,
+              children: Map(0) {}
+            },
+            "wwpnn" => <ref *4> Node {
+              name: "wwpnn",
+              parent: [Circular *3],
+              isDirectory: true,
+              size: 2877389,
+              children: Map(6) {
+                "jjdgzwnq" => Node {
+                  name: "jjdgzwnq",
+                  parent: [Circular *4],
+                  isDirectory: false,
+                  size: 58541,
+                  children: Map(0) {}
+                },
+                "lwqgsbg" => <ref *5> Node {
+                  name: "lwqgsbg",
+                  parent: [Circular *4],
+                  isDirectory: true,
+                  size: 1927095,
+                  children: Map(8) {
+                    "cpqhb.jsf" => Node {
+                      name: "cpqhb.jsf",
+                      parent: [Circular *5],
+                      isDirectory: false,
+                      size: 207528,
+                      children: Map(0) {}
+                    },
+                    "cqjgspw" => Node {
+                      name: "cqjgspw",
+                      parent: [Circular *5],
+                      isDirectory: false,
+                      size: 38543,
+                      children: Map(0) {}
+                    },
+                    "dtbzzl" => <ref *6> Node {
+                      name: "dtbzzl",
+                      parent: [Circular *5],
+                      isDirectory: true,
+                      size: 252091,
+                      children: Map(1) {
+                        "vhvn.zqv" => Node {
+                          name: "vhvn.zqv",
+                          parent: [Circular *6],
+                          isDirectory: false,
+                          size: 252091,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "dtbzzl.njz" => Node {
+                      name: "dtbzzl.njz",
+                      parent: [Circular *5],
+                      isDirectory: false,
+                      size: 106337,
+                      children: Map(0) {}
+                    },
+                    "pdv.ppg" => Node {
+                      name: "pdv.ppg",
+                      parent: [Circular *5],
+                      isDirectory: false,
+                      size: 302201,
+                      children: Map(0) {}
+                    },
+                    "pjts" => <ref *7> Node {
+                      name: "pjts",
+                      parent: [Circular *5],
+                      isDirectory: true,
+                      size: 374873,
+                      children: Map(2) {
+                        "bdbfjbgt.rwg" => Node {
+                          name: "bdbfjbgt.rwg",
+                          parent: [Circular *7],
+                          isDirectory: false,
+                          size: 155681,
+                          children: Map(0) {}
+                        },
+                        "dtcz.gqt" => Node {
+                          name: "dtcz.gqt",
+                          parent: [Circular *7],
+                          isDirectory: false,
+                          size: 219192,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *5],
+                      isDirectory: false,
+                      size: 175215,
+                      children: Map(0) {}
+                    },
+                    "sbvljdh" => <ref *8> Node {
+                      name: "sbvljdh",
+                      parent: [Circular *5],
+                      isDirectory: true,
+                      size: 470307,
+                      children: Map(2) {
+                        "rdrqc" => <ref *9> Node {
+                          name: "rdrqc",
+                          parent: [Circular *8],
+                          isDirectory: true,
+                          size: 242263,
+                          children: Map(1) {
+                            "pjts.mbt" => Node {
+                              name: "pjts.mbt",
+                              parent: [Circular *9],
+                              isDirectory: false,
+                              size: 242263,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "rtfpcswj" => <ref *10> Node {
+                          name: "rtfpcswj",
+                          parent: [Circular *8],
+                          isDirectory: true,
+                          size: 228044,
+                          children: Map(1) {
+                            "ssgcjt.twr" => Node {
+                              name: "ssgcjt.twr",
+                              parent: [Circular *10],
+                              isDirectory: false,
+                              size: 228044,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "nztw" => <ref *11> Node {
+                  name: "nztw",
+                  parent: [Circular *4],
+                  isDirectory: true,
+                  size: 30777,
+                  children: Map(1) {
+                    "vqfsh.smp" => Node {
+                      name: "vqfsh.smp",
+                      parent: [Circular *11],
+                      isDirectory: false,
+                      size: 30777,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "rdtjztmt" => <ref *12> Node {
+                  name: "rdtjztmt",
+                  parent: [Circular *4],
+                  isDirectory: true,
+                  size: 736944,
+                  children: Map(3) {
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *12],
+                      isDirectory: false,
+                      size: 276602,
+                      children: Map(0) {}
+                    },
+                    "rzbb" => <ref *13> Node {
+                      name: "rzbb",
+                      parent: [Circular *12],
+                      isDirectory: true,
+                      size: 155253,
+                      children: Map(1) {
+                        "pvczm.cfw" => Node {
+                          name: "pvczm.cfw",
+                          parent: [Circular *13],
+                          isDirectory: false,
+                          size: 155253,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "ssdlqcrw.dgb" => Node {
+                      name: "ssdlqcrw.dgb",
+                      parent: [Circular *12],
+                      isDirectory: false,
+                      size: 305089,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "sqqpcvq.llm" => Node {
+                  name: "sqqpcvq.llm",
+                  parent: [Circular *4],
+                  isDirectory: false,
+                  size: 101609,
+                  children: Map(0) {}
+                },
+                "ssdlqcrw" => <ref *14> Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *4],
+                  isDirectory: true,
+                  size: 22423,
+                  children: Map(1) {
+                    "vqfsh.smp" => Node {
+                      name: "vqfsh.smp",
+                      parent: [Circular *14],
+                      isDirectory: false,
+                      size: 22423,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pjnghbm" => <ref *15> Node {
+          name: "pjnghbm",
+          parent: [Circular *2],
+          isDirectory: true,
+          size: 6096648,
+          children: Map(4) {
+            "ctqfg.ljd" => Node {
+              name: "ctqfg.ljd",
+              parent: [Circular *15],
+              isDirectory: false,
+              size: 189296,
+              children: Map(0) {}
+            },
+            "dtbzzl" => <ref *16> Node {
+              name: "dtbzzl",
+              parent: [Circular *15],
+              isDirectory: true,
+              size: 4008321,
+              children: Map(7) {
+                "fbb.gtn" => Node {
+                  name: "fbb.gtn",
+                  parent: [Circular *16],
+                  isDirectory: false,
+                  size: 239152,
+                  children: Map(0) {}
+                },
+                "hlw" => <ref *17> Node {
+                  name: "hlw",
+                  parent: [Circular *16],
+                  isDirectory: true,
+                  size: 2490397,
+                  children: Map(2) {
+                    "lfqqrp" => <ref *18> Node {
+                      name: "lfqqrp",
+                      parent: [Circular *17],
+                      isDirectory: true,
+                      size: 2177388,
+                      children: Map(5) {
+                        "mbmfpz" => <ref *19> Node {
+                          name: "mbmfpz",
+                          parent: [Circular *18],
+                          isDirectory: true,
+                          size: 795801,
+                          children: Map(2) {
+                            "fsrbwl" => <ref *20> Node {
+                              name: "fsrbwl",
+                              parent: [Circular *19],
+                              isDirectory: true,
+                              size: 733934,
+                              children: Map(5) {
+                                "ftlc.zbr" => Node {
+                                  name: "ftlc.zbr",
+                                  parent: [Circular *20],
+                                  isDirectory: false,
+                                  size: 154657,
+                                  children: Map(0) {}
+                                },
+                                "ltsj" => <ref *21> Node {
+                                  name: "ltsj",
+                                  parent: [Circular *20],
+                                  isDirectory: true,
+                                  size: 51204,
+                                  children: Map(1) {
+                                    "vmq.sjg" => Node {
+                                      name: "vmq.sjg",
+                                      parent: [Circular *21],
+                                      isDirectory: false,
+                                      size: 51204,
+                                      children: Map(0) {}
+                                    }
+                                  }
+                                },
+                                "pvczm.cfw" => Node {
+                                  name: "pvczm.cfw",
+                                  parent: [Circular *20],
+                                  isDirectory: false,
+                                  size: 228929,
+                                  children: Map(0) {}
+                                },
+                                "ssdlqcrw" => <ref *22> Node {
+                                  name: "ssdlqcrw",
+                                  parent: [Circular *20],
+                                  isDirectory: true,
+                                  size: 64928,
+                                  children: Map(1) {
+                                    "nztw.gpn" => Node {
+                                      name: "nztw.gpn",
+                                      parent: [Circular *22],
+                                      isDirectory: false,
+                                      size: 64928,
+                                      children: Map(0) {}
+                                    }
+                                  }
+                                },
+                                "tdl" => Node {
+                                  name: "tdl",
+                                  parent: [Circular *20],
+                                  isDirectory: false,
+                                  size: 234216,
+                                  children: Map(0) {}
+                                }
+                              }
+                            },
+                            "lsmpw" => <ref *23> Node {
+                              name: "lsmpw",
+                              parent: [Circular *19],
+                              isDirectory: true,
+                              size: 61867,
+                              children: Map(1) {
+                                "dtbzzl.dgj" => Node {
+                                  name: "dtbzzl.dgj",
+                                  parent: [Circular *23],
+                                  isDirectory: false,
+                                  size: 61867,
+                                  children: Map(0) {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "mdhfdlw" => <ref *24> Node {
+                          name: "mdhfdlw",
+                          parent: [Circular *18],
+                          isDirectory: true,
+                          size: 331904,
+                          children: Map(2) {
+                            "dtbzzl.jmq" => Node {
+                              name: "dtbzzl.jmq",
+                              parent: [Circular *24],
+                              isDirectory: false,
+                              size: 92462,
+                              children: Map(0) {}
+                            },
+                            "tczcgf.zwj" => Node {
+                              name: "tczcgf.zwj",
+                              parent: [Circular *24],
+                              isDirectory: false,
+                              size: 239442,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "pjts" => <ref *25> Node {
+                          name: "pjts",
+                          parent: [Circular *18],
+                          isDirectory: true,
+                          size: 846114,
+                          children: Map(3) {
+                            "dtbzzl.lnz" => Node {
+                              name: "dtbzzl.lnz",
+                              parent: [Circular *25],
+                              isDirectory: false,
+                              size: 144464,
+                              children: Map(0) {}
+                            },
+                            "pjts" => <ref *26> Node {
+                              name: "pjts",
+                              parent: [Circular *25],
+                              isDirectory: true,
+                              size: 583150,
+                              children: Map(4) {
+                                "dvztnn" => Node {
+                                  name: "dvztnn",
+                                  parent: [Circular *26],
+                                  isDirectory: false,
+                                  size: 173783,
+                                  children: Map(0) {}
+                                },
+                                "jlv.pgh" => Node {
+                                  name: "jlv.pgh",
+                                  parent: [Circular *26],
+                                  isDirectory: false,
+                                  size: 103088,
+                                  children: Map(0) {}
+                                },
+                                "nhm.zhz" => Node {
+                                  name: "nhm.zhz",
+                                  parent: [Circular *26],
+                                  isDirectory: false,
+                                  size: 39332,
+                                  children: Map(0) {}
+                                },
+                                "pppfcg" => Node {
+                                  name: "pppfcg",
+                                  parent: [Circular *26],
+                                  isDirectory: false,
+                                  size: 266947,
+                                  children: Map(0) {}
+                                }
+                              }
+                            },
+                            "swgt.smz" => Node {
+                              name: "swgt.smz",
+                              parent: [Circular *25],
+                              isDirectory: false,
+                              size: 118500,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "qzs" => <ref *27> Node {
+                          name: "qzs",
+                          parent: [Circular *18],
+                          isDirectory: true,
+                          size: 11155,
+                          children: Map(1) {
+                            "cpqhb.jsf" => Node {
+                              name: "cpqhb.jsf",
+                              parent: [Circular *27],
+                              isDirectory: false,
+                              size: 11155,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "ssdlqcrw" => <ref *28> Node {
+                          name: "ssdlqcrw",
+                          parent: [Circular *18],
+                          isDirectory: true,
+                          size: 192414,
+                          children: Map(1) {
+                            "gcwqcwrf.vmb" => Node {
+                              name: "gcwqcwrf.vmb",
+                              parent: [Circular *28],
+                              isDirectory: false,
+                              size: 192414,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "nztw" => <ref *29> Node {
+                      name: "nztw",
+                      parent: [Circular *17],
+                      isDirectory: true,
+                      size: 313009,
+                      children: Map(1) {
+                        "nwt" => Node {
+                          name: "nwt",
+                          parent: [Circular *29],
+                          isDirectory: false,
+                          size: 313009,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "hsnbffzf.qvc" => Node {
+                  name: "hsnbffzf.qvc",
+                  parent: [Circular *16],
+                  isDirectory: false,
+                  size: 39308,
+                  children: Map(0) {}
+                },
+                "nhm.zhz" => Node {
+                  name: "nhm.zhz",
+                  parent: [Circular *16],
+                  isDirectory: false,
+                  size: 211316,
+                  children: Map(0) {}
+                },
+                "nztw" => <ref *30> Node {
+                  name: "nztw",
+                  parent: [Circular *16],
+                  isDirectory: true,
+                  size: 550260,
+                  children: Map(2) {
+                    "dtbzzl.grj" => Node {
+                      name: "dtbzzl.grj",
+                      parent: [Circular *30],
+                      isDirectory: false,
+                      size: 280535,
+                      children: Map(0) {}
+                    },
+                    "ssdlqcrw.tqs" => Node {
+                      name: "ssdlqcrw.tqs",
+                      parent: [Circular *30],
+                      isDirectory: false,
+                      size: 269725,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "pvsjpn" => <ref *31> Node {
+                  name: "pvsjpn",
+                  parent: [Circular *16],
+                  isDirectory: true,
+                  size: 247651,
+                  children: Map(2) {
+                    "jvjb.mdd" => Node {
+                      name: "jvjb.mdd",
+                      parent: [Circular *31],
+                      isDirectory: false,
+                      size: 105150,
+                      children: Map(0) {}
+                    },
+                    "nztw.cvp" => Node {
+                      name: "nztw.cvp",
+                      parent: [Circular *31],
+                      isDirectory: false,
+                      size: 142501,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "twjq" => Node {
+                  name: "twjq",
+                  parent: [Circular *16],
+                  isDirectory: false,
+                  size: 230237,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "pjts" => <ref *32> Node {
+              name: "pjts",
+              parent: [Circular *15],
+              isDirectory: true,
+              size: 1693637,
+              children: Map(3) {
+                "btc" => <ref *33> Node {
+                  name: "btc",
+                  parent: [Circular *32],
+                  isDirectory: true,
+                  size: 5264,
+                  children: Map(1) {
+                    "gdjpql.wqr" => Node {
+                      name: "gdjpql.wqr",
+                      parent: [Circular *33],
+                      isDirectory: false,
+                      size: 5264,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "tpwcmvch" => <ref *34> Node {
+                  name: "tpwcmvch",
+                  parent: [Circular *32],
+                  isDirectory: true,
+                  size: 1429016,
+                  children: Map(7) {
+                    "jjdgzwnq" => Node {
+                      name: "jjdgzwnq",
+                      parent: [Circular *34],
+                      isDirectory: false,
+                      size: 141657,
+                      children: Map(0) {}
+                    },
+                    "nhm.zhz" => Node {
+                      name: "nhm.zhz",
+                      parent: [Circular *34],
+                      isDirectory: false,
+                      size: 15650,
+                      children: Map(0) {}
+                    },
+                    "nlrq" => <ref *35> Node {
+                      name: "nlrq",
+                      parent: [Circular *34],
+                      isDirectory: true,
+                      size: 478350,
+                      children: Map(2) {
+                        "dtbzzl" => <ref *36> Node {
+                          name: "dtbzzl",
+                          parent: [Circular *35],
+                          isDirectory: true,
+                          size: 271143,
+                          children: Map(1) {
+                            "wjbzmc" => Node {
+                              name: "wjbzmc",
+                              parent: [Circular *36],
+                              isDirectory: false,
+                              size: 271143,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "gnd.vmb" => Node {
+                          name: "gnd.vmb",
+                          parent: [Circular *35],
+                          isDirectory: false,
+                          size: 207207,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "qgf.qgj" => Node {
+                      name: "qgf.qgj",
+                      parent: [Circular *34],
+                      isDirectory: false,
+                      size: 182100,
+                      children: Map(0) {}
+                    },
+                    "qshf" => Node {
+                      name: "qshf",
+                      parent: [Circular *34],
+                      isDirectory: false,
+                      size: 302332,
+                      children: Map(0) {}
+                    },
+                    "vhvn" => Node {
+                      name: "vhvn",
+                      parent: [Circular *34],
+                      isDirectory: false,
+                      size: 244799,
+                      children: Map(0) {}
+                    },
+                    "wvnqzjf" => <ref *37> Node {
+                      name: "wvnqzjf",
+                      parent: [Circular *34],
+                      isDirectory: true,
+                      size: 64128,
+                      children: Map(1) {
+                        "mtzc.rqb" => Node {
+                          name: "mtzc.rqb",
+                          parent: [Circular *37],
+                          isDirectory: false,
+                          size: 64128,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "vqfsh.smp" => Node {
+                  name: "vqfsh.smp",
+                  parent: [Circular *32],
+                  isDirectory: false,
+                  size: 259357,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "ssdlqcrw.lgv" => Node {
+              name: "ssdlqcrw.lgv",
+              parent: [Circular *15],
+              isDirectory: false,
+              size: 205394,
+              children: Map(0) {}
+            }
+          }
+        },
+        "rvs" => Node {
+          name: "rvs",
+          parent: [Circular *2],
+          isDirectory: false,
+          size: 16144,
+          children: Map(0) {}
+        },
+        "swngfrsj.pcj" => Node {
+          name: "swngfrsj.pcj",
+          parent: [Circular *2],
+          isDirectory: false,
+          size: 50956,
+          children: Map(0) {}
+        },
+        "vhvn" => <ref *38> Node {
+          name: "vhvn",
+          parent: [Circular *2],
+          isDirectory: true,
+          size: 187526,
+          children: Map(1) {
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *38],
+              isDirectory: false,
+              size: 187526,
+              children: Map(0) {}
+            }
+          }
+        },
+        "vrt" => <ref *39> Node {
+          name: "vrt",
+          parent: [Circular *2],
+          isDirectory: true,
+          size: 1069296,
+          children: Map(4) {
+            "drrnm" => <ref *40> Node {
+              name: "drrnm",
+              parent: [Circular *39],
+              isDirectory: true,
+              size: 250912,
+              children: Map(1) {
+                "pvczm.cfw" => Node {
+                  name: "pvczm.cfw",
+                  parent: [Circular *40],
+                  isDirectory: false,
+                  size: 250912,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "fqr" => <ref *41> Node {
+              name: "fqr",
+              parent: [Circular *39],
+              isDirectory: true,
+              size: 409913,
+              children: Map(3) {
+                "nszfcq" => Node {
+                  name: "nszfcq",
+                  parent: [Circular *41],
+                  isDirectory: false,
+                  size: 229272,
+                  children: Map(0) {}
+                },
+                "nztw" => <ref *42> Node {
+                  name: "nztw",
+                  parent: [Circular *41],
+                  isDirectory: true,
+                  size: 9998,
+                  children: Map(1) {
+                    "bqf" => <ref *43> Node {
+                      name: "bqf",
+                      parent: [Circular *42],
+                      isDirectory: true,
+                      size: 9998,
+                      children: Map(1) {
+                        "vqfsh.smp" => Node {
+                          name: "vqfsh.smp",
+                          parent: [Circular *43],
+                          isDirectory: false,
+                          size: 9998,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "phh.pdl" => Node {
+                  name: "phh.pdl",
+                  parent: [Circular *41],
+                  isDirectory: false,
+                  size: 170643,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "nztw.mfg" => Node {
+              name: "nztw.mfg",
+              parent: [Circular *39],
+              isDirectory: false,
+              size: 270995,
+              children: Map(0) {}
+            },
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *39],
+              isDirectory: false,
+              size: 137476,
+              children: Map(0) {}
+            }
+          }
+        },
+        "zgrjmtcq" => <ref *44> Node {
+          name: "zgrjmtcq",
+          parent: [Circular *2],
+          isDirectory: true,
+          size: 109025,
+          children: Map(1) {
+            "vhvn" => Node {
+              name: "vhvn",
+              parent: [Circular *44],
+              isDirectory: false,
+              size: 109025,
+              children: Map(0) {}
+            }
+          }
+        }
+      }
+    },
+    "ftrccld" => <ref *45> Node {
+      name: "ftrccld",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 17428128,
+      children: Map(13) {
+        "dtbzzl" => <ref *46> Node {
+          name: "dtbzzl",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 500982,
+          children: Map(1) {
+            "fgwh" => <ref *47> Node {
+              name: "fgwh",
+              parent: [Circular *46],
+              isDirectory: true,
+              size: 500982,
+              children: Map(1) {
+                "dpdvswq" => <ref *48> Node {
+                  name: "dpdvswq",
+                  parent: [Circular *47],
+                  isDirectory: true,
+                  size: 500982,
+                  children: Map(2) {
+                    "jsstq" => <ref *49> Node {
+                      name: "jsstq",
+                      parent: [Circular *48],
+                      isDirectory: true,
+                      size: 252517,
+                      children: Map(1) {
+                        "nztw" => Node {
+                          name: "nztw",
+                          parent: [Circular *49],
+                          isDirectory: false,
+                          size: 252517,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "vhvn" => Node {
+                      name: "vhvn",
+                      parent: [Circular *48],
+                      isDirectory: false,
+                      size: 248465,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fvmh" => <ref *50> Node {
+          name: "fvmh",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 5973492,
+          children: Map(7) {
+            "djcn" => <ref *51> Node {
+              name: "djcn",
+              parent: [Circular *50],
+              isDirectory: true,
+              size: 8600,
+              children: Map(1) {
+                "jjdgzwnq" => Node {
+                  name: "jjdgzwnq",
+                  parent: [Circular *51],
+                  isDirectory: false,
+                  size: 8600,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "dtbzzl" => <ref *52> Node {
+              name: "dtbzzl",
+              parent: [Circular *50],
+              isDirectory: true,
+              size: 2623574,
+              children: Map(2) {
+                "sppdjcm" => <ref *53> Node {
+                  name: "sppdjcm",
+                  parent: [Circular *52],
+                  isDirectory: true,
+                  size: 1601353,
+                  children: Map(5) {
+                    "dvfctpg.zbn" => Node {
+                      name: "dvfctpg.zbn",
+                      parent: [Circular *53],
+                      isDirectory: false,
+                      size: 237925,
+                      children: Map(0) {}
+                    },
+                    "fghb" => <ref *54> Node {
+                      name: "fghb",
+                      parent: [Circular *53],
+                      isDirectory: true,
+                      size: 368529,
+                      children: Map(2) {
+                        "cpqhb.jsf" => Node {
+                          name: "cpqhb.jsf",
+                          parent: [Circular *54],
+                          isDirectory: false,
+                          size: 280081,
+                          children: Map(0) {}
+                        },
+                        "wbcpnnvs.sjc" => Node {
+                          name: "wbcpnnvs.sjc",
+                          parent: [Circular *54],
+                          isDirectory: false,
+                          size: 88448,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "pfjdsm" => <ref *55> Node {
+                      name: "pfjdsm",
+                      parent: [Circular *53],
+                      isDirectory: true,
+                      size: 488529,
+                      children: Map(3) {
+                        "bssmgf" => Node {
+                          name: "bssmgf",
+                          parent: [Circular *55],
+                          isDirectory: false,
+                          size: 256877,
+                          children: Map(0) {}
+                        },
+                        "drwttw" => Node {
+                          name: "drwttw",
+                          parent: [Circular *55],
+                          isDirectory: false,
+                          size: 127978,
+                          children: Map(0) {}
+                        },
+                        "hznr.hjg" => Node {
+                          name: "hznr.hjg",
+                          parent: [Circular *55],
+                          isDirectory: false,
+                          size: 103674,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "pjts" => <ref *56> Node {
+                      name: "pjts",
+                      parent: [Circular *53],
+                      isDirectory: true,
+                      size: 191709,
+                      children: Map(1) {
+                        "qhwwpzn.dsc" => Node {
+                          name: "qhwwpzn.dsc",
+                          parent: [Circular *56],
+                          isDirectory: false,
+                          size: 191709,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "zfchfq" => Node {
+                      name: "zfchfq",
+                      parent: [Circular *53],
+                      isDirectory: false,
+                      size: 314661,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "vtnzqtvj" => <ref *57> Node {
+                  name: "vtnzqtvj",
+                  parent: [Circular *52],
+                  isDirectory: true,
+                  size: 1022221,
+                  children: Map(1) {
+                    "rrl" => <ref *58> Node {
+                      name: "rrl",
+                      parent: [Circular *57],
+                      isDirectory: true,
+                      size: 1022221,
+                      children: Map(4) {
+                        "jjdgzwnq" => Node {
+                          name: "jjdgzwnq",
+                          parent: [Circular *58],
+                          isDirectory: false,
+                          size: 281036,
+                          children: Map(0) {}
+                        },
+                        "lzlswv" => <ref *59> Node {
+                          name: "lzlswv",
+                          parent: [Circular *58],
+                          isDirectory: true,
+                          size: 274776,
+                          children: Map(1) {
+                            "dmh" => <ref *60> Node {
+                              name: "dmh",
+                              parent: [Circular *59],
+                              isDirectory: true,
+                              size: 274776,
+                              children: Map(2) {
+                                "hlhgn.mvr" => Node {
+                                  name: "hlhgn.mvr",
+                                  parent: [Circular *60],
+                                  isDirectory: false,
+                                  size: 41234,
+                                  children: Map(0) {}
+                                },
+                                "tgv.csn" => Node {
+                                  name: "tgv.csn",
+                                  parent: [Circular *60],
+                                  isDirectory: false,
+                                  size: 233542,
+                                  children: Map(0) {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "sjsqnvq" => <ref *61> Node {
+                          name: "sjsqnvq",
+                          parent: [Circular *58],
+                          isDirectory: true,
+                          size: 221327,
+                          children: Map(1) {
+                            "qjncmbn" => Node {
+                              name: "qjncmbn",
+                              parent: [Circular *61],
+                              isDirectory: false,
+                              size: 221327,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "ssdlqcrw.smq" => Node {
+                          name: "ssdlqcrw.smq",
+                          parent: [Circular *58],
+                          isDirectory: false,
+                          size: 245082,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "fbnnfsbp.zzg" => Node {
+              name: "fbnnfsbp.zzg",
+              parent: [Circular *50],
+              isDirectory: false,
+              size: 303052,
+              children: Map(0) {}
+            },
+            "mdpcghq.nls" => Node {
+              name: "mdpcghq.nls",
+              parent: [Circular *50],
+              isDirectory: false,
+              size: 77238,
+              children: Map(0) {}
+            },
+            "mvppnhr" => <ref *62> Node {
+              name: "mvppnhr",
+              parent: [Circular *50],
+              isDirectory: true,
+              size: 1735755,
+              children: Map(5) {
+                "ldwv" => <ref *63> Node {
+                  name: "ldwv",
+                  parent: [Circular *62],
+                  isDirectory: true,
+                  size: 161179,
+                  children: Map(1) {
+                    "mjsm" => Node {
+                      name: "mjsm",
+                      parent: [Circular *63],
+                      isDirectory: false,
+                      size: 161179,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "nztw" => Node {
+                  name: "nztw",
+                  parent: [Circular *62],
+                  isDirectory: false,
+                  size: 176153,
+                  children: Map(0) {}
+                },
+                "rmdjdqvl" => <ref *64> Node {
+                  name: "rmdjdqvl",
+                  parent: [Circular *62],
+                  isDirectory: true,
+                  size: 365329,
+                  children: Map(3) {
+                    "gnztqmhv" => <ref *65> Node {
+                      name: "gnztqmhv",
+                      parent: [Circular *64],
+                      isDirectory: true,
+                      size: 176043,
+                      children: Map(1) {
+                        "qlds.mpq" => Node {
+                          name: "qlds.mpq",
+                          parent: [Circular *65],
+                          isDirectory: false,
+                          size: 176043,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "lpmhfr" => <ref *66> Node {
+                      name: "lpmhfr",
+                      parent: [Circular *64],
+                      isDirectory: true,
+                      size: 114477,
+                      children: Map(1) {
+                        "jrrdsd" => <ref *67> Node {
+                          name: "jrrdsd",
+                          parent: [Circular *66],
+                          isDirectory: true,
+                          size: 114477,
+                          children: Map(1) {
+                            "vqfsh.smp" => Node {
+                              name: "vqfsh.smp",
+                              parent: [Circular *67],
+                              isDirectory: false,
+                              size: 114477,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "tphjm" => <ref *68> Node {
+                      name: "tphjm",
+                      parent: [Circular *64],
+                      isDirectory: true,
+                      size: 74809,
+                      children: Map(1) {
+                        "dcfmjn" => Node {
+                          name: "dcfmjn",
+                          parent: [Circular *68],
+                          isDirectory: false,
+                          size: 74809,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "tmj" => <ref *69> Node {
+                  name: "tmj",
+                  parent: [Circular *62],
+                  isDirectory: true,
+                  size: 557891,
+                  children: Map(4) {
+                    "cpqhb.jsf" => Node {
+                      name: "cpqhb.jsf",
+                      parent: [Circular *69],
+                      isDirectory: false,
+                      size: 252001,
+                      children: Map(0) {}
+                    },
+                    "pqpq" => Node {
+                      name: "pqpq",
+                      parent: [Circular *69],
+                      isDirectory: false,
+                      size: 49666,
+                      children: Map(0) {}
+                    },
+                    "qpj.wpb" => Node {
+                      name: "qpj.wpb",
+                      parent: [Circular *69],
+                      isDirectory: false,
+                      size: 139885,
+                      children: Map(0) {}
+                    },
+                    "vqfsh.smp" => Node {
+                      name: "vqfsh.smp",
+                      parent: [Circular *69],
+                      isDirectory: false,
+                      size: 116339,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "vhvn" => <ref *70> Node {
+                  name: "vhvn",
+                  parent: [Circular *62],
+                  isDirectory: true,
+                  size: 475203,
+                  children: Map(3) {
+                    "dtbzzl.hvp" => Node {
+                      name: "dtbzzl.hvp",
+                      parent: [Circular *70],
+                      isDirectory: false,
+                      size: 89397,
+                      children: Map(0) {}
+                    },
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *70],
+                      isDirectory: false,
+                      size: 105454,
+                      children: Map(0) {}
+                    },
+                    "zdzm" => Node {
+                      name: "zdzm",
+                      parent: [Circular *70],
+                      isDirectory: false,
+                      size: 280352,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            },
+            "ptw" => Node {
+              name: "ptw",
+              parent: [Circular *50],
+              isDirectory: false,
+              size: 238683,
+              children: Map(0) {}
+            },
+            "zdqlwnc" => <ref *71> Node {
+              name: "zdqlwnc",
+              parent: [Circular *50],
+              isDirectory: true,
+              size: 986590,
+              children: Map(5) {
+                "fbhcv" => <ref *72> Node {
+                  name: "fbhcv",
+                  parent: [Circular *71],
+                  isDirectory: true,
+                  size: 368096,
+                  children: Map(2) {
+                    "hrzzgwqt" => Node {
+                      name: "hrzzgwqt",
+                      parent: [Circular *72],
+                      isDirectory: false,
+                      size: 71695,
+                      children: Map(0) {}
+                    },
+                    "vqfsh.smp" => Node {
+                      name: "vqfsh.smp",
+                      parent: [Circular *72],
+                      isDirectory: false,
+                      size: 296401,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "jjdgzwnq" => Node {
+                  name: "jjdgzwnq",
+                  parent: [Circular *71],
+                  isDirectory: false,
+                  size: 8676,
+                  children: Map(0) {}
+                },
+                "nhm.zhz" => Node {
+                  name: "nhm.zhz",
+                  parent: [Circular *71],
+                  isDirectory: false,
+                  size: 99885,
+                  children: Map(0) {}
+                },
+                "pjts.gdj" => Node {
+                  name: "pjts.gdj",
+                  parent: [Circular *71],
+                  isDirectory: false,
+                  size: 234563,
+                  children: Map(0) {}
+                },
+                "rsdltnvc" => <ref *73> Node {
+                  name: "rsdltnvc",
+                  parent: [Circular *71],
+                  isDirectory: true,
+                  size: 275370,
+                  children: Map(2) {
+                    "gcvtqf" => Node {
+                      name: "gcvtqf",
+                      parent: [Circular *73],
+                      isDirectory: false,
+                      size: 41623,
+                      children: Map(0) {}
+                    },
+                    "wdcssvgh.vfs" => Node {
+                      name: "wdcssvgh.vfs",
+                      parent: [Circular *73],
+                      isDirectory: false,
+                      size: 233747,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fwztt" => <ref *74> Node {
+          name: "fwztt",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 5680367,
+          children: Map(7) {
+            "jjdgzwnq" => Node {
+              name: "jjdgzwnq",
+              parent: [Circular *74],
+              isDirectory: false,
+              size: 96594,
+              children: Map(0) {}
+            },
+            "mtp.szl" => Node {
+              name: "mtp.szl",
+              parent: [Circular *74],
+              isDirectory: false,
+              size: 245415,
+              children: Map(0) {}
+            },
+            "pjts.jjr" => Node {
+              name: "pjts.jjr",
+              parent: [Circular *74],
+              isDirectory: false,
+              size: 129782,
+              children: Map(0) {}
+            },
+            "pvczm.cfw" => Node {
+              name: "pvczm.cfw",
+              parent: [Circular *74],
+              isDirectory: false,
+              size: 308104,
+              children: Map(0) {}
+            },
+            "ssdlqcrw" => <ref *75> Node {
+              name: "ssdlqcrw",
+              parent: [Circular *74],
+              isDirectory: true,
+              size: 837222,
+              children: Map(4) {
+                "bzd" => <ref *76> Node {
+                  name: "bzd",
+                  parent: [Circular *75],
+                  isDirectory: true,
+                  size: 256105,
+                  children: Map(2) {
+                    "brdc" => Node {
+                      name: "brdc",
+                      parent: [Circular *76],
+                      isDirectory: false,
+                      size: 84648,
+                      children: Map(0) {}
+                    },
+                    "vhvn" => Node {
+                      name: "vhvn",
+                      parent: [Circular *76],
+                      isDirectory: false,
+                      size: 171457,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "dtbzzl.tdb" => Node {
+                  name: "dtbzzl.tdb",
+                  parent: [Circular *75],
+                  isDirectory: false,
+                  size: 292228,
+                  children: Map(0) {}
+                },
+                "ssdlqcrw" => Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *75],
+                  isDirectory: false,
+                  size: 107505,
+                  children: Map(0) {}
+                },
+                "tfnrpsd" => Node {
+                  name: "tfnrpsd",
+                  parent: [Circular *75],
+                  isDirectory: false,
+                  size: 181384,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "vhvn.smj" => Node {
+              name: "vhvn.smj",
+              parent: [Circular *74],
+              isDirectory: false,
+              size: 155109,
+              children: Map(0) {}
+            },
+            "vvzsr" => <ref *77> Node {
+              name: "vvzsr",
+              parent: [Circular *74],
+              isDirectory: true,
+              size: 3908141,
+              children: Map(6) {
+                "bcdqrs" => <ref *78> Node {
+                  name: "bcdqrs",
+                  parent: [Circular *77],
+                  isDirectory: true,
+                  size: 433473,
+                  children: Map(2) {
+                    "pspd.dlq" => Node {
+                      name: "pspd.dlq",
+                      parent: [Circular *78],
+                      isDirectory: false,
+                      size: 297401,
+                      children: Map(0) {}
+                    },
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *78],
+                      isDirectory: false,
+                      size: 136072,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "jjdgzwnq" => Node {
+                  name: "jjdgzwnq",
+                  parent: [Circular *77],
+                  isDirectory: false,
+                  size: 147437,
+                  children: Map(0) {}
+                },
+                "ssdlqcrw" => <ref *79> Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *77],
+                  isDirectory: true,
+                  size: 293104,
+                  children: Map(1) {
+                    "dtbzzl.pdh" => Node {
+                      name: "dtbzzl.pdh",
+                      parent: [Circular *79],
+                      isDirectory: false,
+                      size: 293104,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "ssdlqcrw.dpz" => Node {
+                  name: "ssdlqcrw.dpz",
+                  parent: [Circular *77],
+                  isDirectory: false,
+                  size: 197054,
+                  children: Map(0) {}
+                },
+                "vhvn" => <ref *80> Node {
+                  name: "vhvn",
+                  parent: [Circular *77],
+                  isDirectory: true,
+                  size: 178932,
+                  children: Map(1) {
+                    "gvrht.cbm" => Node {
+                      name: "gvrht.cbm",
+                      parent: [Circular *80],
+                      isDirectory: false,
+                      size: 178932,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "wthshgg" => <ref *81> Node {
+                  name: "wthshgg",
+                  parent: [Circular *77],
+                  isDirectory: true,
+                  size: 2658141,
+                  children: Map(8) {
+                    "dppwvtmp" => <ref *82> Node {
+                      name: "dppwvtmp",
+                      parent: [Circular *81],
+                      isDirectory: true,
+                      size: 275481,
+                      children: Map(3) {
+                        "dtbzzl.lfq" => Node {
+                          name: "dtbzzl.lfq",
+                          parent: [Circular *82],
+                          isDirectory: false,
+                          size: 45608,
+                          children: Map(0) {}
+                        },
+                        "gdch.bzp" => Node {
+                          name: "gdch.bzp",
+                          parent: [Circular *82],
+                          isDirectory: false,
+                          size: 164648,
+                          children: Map(0) {}
+                        },
+                        "nhm.zhz" => Node {
+                          name: "nhm.zhz",
+                          parent: [Circular *82],
+                          isDirectory: false,
+                          size: 65225,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "ljgszd" => <ref *83> Node {
+                      name: "ljgszd",
+                      parent: [Circular *81],
+                      isDirectory: true,
+                      size: 125627,
+                      children: Map(1) {
+                        "vqfsh.smp" => Node {
+                          name: "vqfsh.smp",
+                          parent: [Circular *83],
+                          isDirectory: false,
+                          size: 125627,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "pcmw.bbq" => Node {
+                      name: "pcmw.bbq",
+                      parent: [Circular *81],
+                      isDirectory: false,
+                      size: 88822,
+                      children: Map(0) {}
+                    },
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *81],
+                      isDirectory: false,
+                      size: 255776,
+                      children: Map(0) {}
+                    },
+                    "ssdlqcrw" => Node {
+                      name: "ssdlqcrw",
+                      parent: [Circular *81],
+                      isDirectory: false,
+                      size: 163501,
+                      children: Map(0) {}
+                    },
+                    "vbjsmgp" => <ref *84> Node {
+                      name: "vbjsmgp",
+                      parent: [Circular *81],
+                      isDirectory: true,
+                      size: 236951,
+                      children: Map(1) {
+                        "zpbgb.zmv" => Node {
+                          name: "zpbgb.zmv",
+                          parent: [Circular *84],
+                          isDirectory: false,
+                          size: 236951,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "vzqc" => <ref *85> Node {
+                      name: "vzqc",
+                      parent: [Circular *81],
+                      isDirectory: true,
+                      size: 853242,
+                      children: Map(4) {
+                        "fjfpbjjp" => Node {
+                          name: "fjfpbjjp",
+                          parent: [Circular *85],
+                          isDirectory: false,
+                          size: 234565,
+                          children: Map(0) {}
+                        },
+                        "jjdgzwnq" => Node {
+                          name: "jjdgzwnq",
+                          parent: [Circular *85],
+                          isDirectory: false,
+                          size: 254986,
+                          children: Map(0) {}
+                        },
+                        "nztw.qhz" => Node {
+                          name: "nztw.qhz",
+                          parent: [Circular *85],
+                          isDirectory: false,
+                          size: 164495,
+                          children: Map(0) {}
+                        },
+                        "vhvn" => <ref *86> Node {
+                          name: "vhvn",
+                          parent: [Circular *85],
+                          isDirectory: true,
+                          size: 199196,
+                          children: Map(1) {
+                            "nztw" => Node {
+                              name: "nztw",
+                              parent: [Circular *86],
+                              isDirectory: false,
+                              size: 199196,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "zmpdrpd" => <ref *87> Node {
+                      name: "zmpdrpd",
+                      parent: [Circular *81],
+                      isDirectory: true,
+                      size: 658741,
+                      children: Map(4) {
+                        "bznqq.dbv" => Node {
+                          name: "bznqq.dbv",
+                          parent: [Circular *87],
+                          isDirectory: false,
+                          size: 123210,
+                          children: Map(0) {}
+                        },
+                        "jjdgzwnq" => Node {
+                          name: "jjdgzwnq",
+                          parent: [Circular *87],
+                          isDirectory: false,
+                          size: 141163,
+                          children: Map(0) {}
+                        },
+                        "wjf.tdv" => Node {
+                          name: "wjf.tdv",
+                          parent: [Circular *87],
+                          isDirectory: false,
+                          size: 302352,
+                          children: Map(0) {}
+                        },
+                        "wljnwsh" => Node {
+                          name: "wljnwsh",
+                          parent: [Circular *87],
+                          isDirectory: false,
+                          size: 92016,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "jngjc.mpd" => Node {
+          name: "jngjc.mpd",
+          parent: [Circular *45],
+          isDirectory: false,
+          size: 22306,
+          children: Map(0) {}
+        },
+        "lnr.jhn" => Node {
+          name: "lnr.jhn",
+          parent: [Circular *45],
+          isDirectory: false,
+          size: 190320,
+          children: Map(0) {}
+        },
+        "lsvvn" => <ref *88> Node {
+          name: "lsvvn",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 282867,
+          children: Map(1) {
+            "phv.ncc" => Node {
+              name: "phv.ncc",
+              parent: [Circular *88],
+              isDirectory: false,
+              size: 282867,
+              children: Map(0) {}
+            }
+          }
+        },
+        "nztw" => Node {
+          name: "nztw",
+          parent: [Circular *45],
+          isDirectory: false,
+          size: 295676,
+          children: Map(0) {}
+        },
+        "nztw.ssc" => Node {
+          name: "nztw.ssc",
+          parent: [Circular *45],
+          isDirectory: false,
+          size: 135025,
+          children: Map(0) {}
+        },
+        "pjts" => <ref *89> Node {
+          name: "pjts",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 40866,
+          children: Map(1) {
+            "jjdgzwnq" => Node {
+              name: "jjdgzwnq",
+              parent: [Circular *89],
+              isDirectory: false,
+              size: 40866,
+              children: Map(0) {}
+            }
+          }
+        },
+        "qglhlggq" => <ref *90> Node {
+          name: "qglhlggq",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 3127580,
+          children: Map(7) {
+            "dtbzzl.ngb" => Node {
+              name: "dtbzzl.ngb",
+              parent: [Circular *90],
+              isDirectory: false,
+              size: 19577,
+              children: Map(0) {}
+            },
+            "jjdgzwnq" => Node {
+              name: "jjdgzwnq",
+              parent: [Circular *90],
+              isDirectory: false,
+              size: 21171,
+              children: Map(0) {}
+            },
+            "pvczm.cfw" => Node {
+              name: "pvczm.cfw",
+              parent: [Circular *90],
+              isDirectory: false,
+              size: 136074,
+              children: Map(0) {}
+            },
+            "rlpjjf.lvh" => Node {
+              name: "rlpjjf.lvh",
+              parent: [Circular *90],
+              isDirectory: false,
+              size: 212428,
+              children: Map(0) {}
+            },
+            "vhvn" => <ref *91> Node {
+              name: "vhvn",
+              parent: [Circular *90],
+              isDirectory: true,
+              size: 2290224,
+              children: Map(8) {
+                "cbppfp.vbc" => Node {
+                  name: "cbppfp.vbc",
+                  parent: [Circular *91],
+                  isDirectory: false,
+                  size: 183301,
+                  children: Map(0) {}
+                },
+                "cqnz" => Node {
+                  name: "cqnz",
+                  parent: [Circular *91],
+                  isDirectory: false,
+                  size: 84069,
+                  children: Map(0) {}
+                },
+                "dtbzzl" => <ref *92> Node {
+                  name: "dtbzzl",
+                  parent: [Circular *91],
+                  isDirectory: true,
+                  size: 72812,
+                  children: Map(2) {
+                    "ccgbrdmb.hrr" => Node {
+                      name: "ccgbrdmb.hrr",
+                      parent: [Circular *92],
+                      isDirectory: false,
+                      size: 50385,
+                      children: Map(0) {}
+                    },
+                    "rzlwl.jbt" => Node {
+                      name: "rzlwl.jbt",
+                      parent: [Circular *92],
+                      isDirectory: false,
+                      size: 22427,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "mdng" => <ref *93> Node {
+                  name: "mdng",
+                  parent: [Circular *91],
+                  isDirectory: true,
+                  size: 1196426,
+                  children: Map(7) {
+                    "gdqqtvnp" => <ref *94> Node {
+                      name: "gdqqtvnp",
+                      parent: [Circular *93],
+                      isDirectory: true,
+                      size: 292349,
+                      children: Map(1) {
+                        "vhvn.nfr" => Node {
+                          name: "vhvn.nfr",
+                          parent: [Circular *94],
+                          isDirectory: false,
+                          size: 292349,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "gtv.tbz" => Node {
+                      name: "gtv.tbz",
+                      parent: [Circular *93],
+                      isDirectory: false,
+                      size: 224013,
+                      children: Map(0) {}
+                    },
+                    "jjdgzwnq" => Node {
+                      name: "jjdgzwnq",
+                      parent: [Circular *93],
+                      isDirectory: false,
+                      size: 121884,
+                      children: Map(0) {}
+                    },
+                    "nrmhpblm" => <ref *95> Node {
+                      name: "nrmhpblm",
+                      parent: [Circular *93],
+                      isDirectory: true,
+                      size: 130971,
+                      children: Map(2) {
+                        "jbvd.mlc" => Node {
+                          name: "jbvd.mlc",
+                          parent: [Circular *95],
+                          isDirectory: false,
+                          size: 52703,
+                          children: Map(0) {}
+                        },
+                        "pfns.lpr" => Node {
+                          name: "pfns.lpr",
+                          parent: [Circular *95],
+                          isDirectory: false,
+                          size: 78268,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "nztw" => Node {
+                      name: "nztw",
+                      parent: [Circular *93],
+                      isDirectory: false,
+                      size: 142950,
+                      children: Map(0) {}
+                    },
+                    "pvczm.cfw" => Node {
+                      name: "pvczm.cfw",
+                      parent: [Circular *93],
+                      isDirectory: false,
+                      size: 9710,
+                      children: Map(0) {}
+                    },
+                    "vhvn" => <ref *96> Node {
+                      name: "vhvn",
+                      parent: [Circular *93],
+                      isDirectory: true,
+                      size: 274549,
+                      children: Map(1) {
+                        "pjts" => Node {
+                          name: "pjts",
+                          parent: [Circular *96],
+                          isDirectory: false,
+                          size: 274549,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "pjts.pvp" => Node {
+                  name: "pjts.pvp",
+                  parent: [Circular *91],
+                  isDirectory: false,
+                  size: 126627,
+                  children: Map(0) {}
+                },
+                "ptqq" => <ref *97> Node {
+                  name: "ptqq",
+                  parent: [Circular *91],
+                  isDirectory: true,
+                  size: 424417,
+                  children: Map(2) {
+                    "jqppq.lgb" => Node {
+                      name: "jqppq.lgb",
+                      parent: [Circular *97],
+                      isDirectory: false,
+                      size: 257967,
+                      children: Map(0) {}
+                    },
+                    "nhm.zhz" => Node {
+                      name: "nhm.zhz",
+                      parent: [Circular *97],
+                      isDirectory: false,
+                      size: 166450,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "pvczm.cfw" => Node {
+                  name: "pvczm.cfw",
+                  parent: [Circular *91],
+                  isDirectory: false,
+                  size: 47594,
+                  children: Map(0) {}
+                },
+                "qlnnfbvd" => Node {
+                  name: "qlnnfbvd",
+                  parent: [Circular *91],
+                  isDirectory: false,
+                  size: 154978,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "wcqlws.ndv" => Node {
+              name: "wcqlws.ndv",
+              parent: [Circular *90],
+              isDirectory: false,
+              size: 274669,
+              children: Map(0) {}
+            },
+            "wpvq" => <ref *98> Node {
+              name: "wpvq",
+              parent: [Circular *90],
+              isDirectory: true,
+              size: 173437,
+              children: Map(1) {
+                "vqfsh.smp" => Node {
+                  name: "vqfsh.smp",
+                  parent: [Circular *98],
+                  isDirectory: false,
+                  size: 173437,
+                  children: Map(0) {}
+                }
+              }
+            }
+          }
+        },
+        "rslphgp" => <ref *99> Node {
+          name: "rslphgp",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 641688,
+          children: Map(4) {
+            "pvczm.cfw" => Node {
+              name: "pvczm.cfw",
+              parent: [Circular *99],
+              isDirectory: false,
+              size: 29192,
+              children: Map(0) {}
+            },
+            "ttpfnqvn.cdr" => Node {
+              name: "ttpfnqvn.cdr",
+              parent: [Circular *99],
+              isDirectory: false,
+              size: 18984,
+              children: Map(0) {}
+            },
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *99],
+              isDirectory: false,
+              size: 302301,
+              children: Map(0) {}
+            },
+            "vsvtc.wwf" => Node {
+              name: "vsvtc.wwf",
+              parent: [Circular *99],
+              isDirectory: false,
+              size: 291211,
+              children: Map(0) {}
+            }
+          }
+        },
+        "ssdlqcrw.jnm" => Node {
+          name: "ssdlqcrw.jnm",
+          parent: [Circular *45],
+          isDirectory: false,
+          size: 247764,
+          children: Map(0) {}
+        },
+        "vhvn" => <ref *100> Node {
+          name: "vhvn",
+          parent: [Circular *45],
+          isDirectory: true,
+          size: 289195,
+          children: Map(1) {
+            "ssdlqcrw" => <ref *101> Node {
+              name: "ssdlqcrw",
+              parent: [Circular *100],
+              isDirectory: true,
+              size: 289195,
+              children: Map(3) {
+                "jpwvws.fwv" => Node {
+                  name: "jpwvws.fwv",
+                  parent: [Circular *101],
+                  isDirectory: false,
+                  size: 76864,
+                  children: Map(0) {}
+                },
+                "nztw.css" => Node {
+                  name: "nztw.css",
+                  parent: [Circular *101],
+                  isDirectory: false,
+                  size: 26365,
+                  children: Map(0) {}
+                },
+                "vqfsh.smp" => Node {
+                  name: "vqfsh.smp",
+                  parent: [Circular *101],
+                  isDirectory: false,
+                  size: 185966,
+                  children: Map(0) {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "jjlbmtw" => <ref *102> Node {
+      name: "jjlbmtw",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 550900,
+      children: Map(3) {
+        "ctfhmm.ssv" => Node {
+          name: "ctfhmm.ssv",
+          parent: [Circular *102],
+          isDirectory: false,
+          size: 211239,
+          children: Map(0) {}
+        },
+        "nztw" => Node {
+          name: "nztw",
+          parent: [Circular *102],
+          isDirectory: false,
+          size: 230020,
+          children: Map(0) {}
+        },
+        "sqtjn" => Node {
+          name: "sqtjn",
+          parent: [Circular *102],
+          isDirectory: false,
+          size: 109641,
+          children: Map(0) {}
+        }
+      }
+    },
+    "jpncfpb" => <ref *103> Node {
+      name: "jpncfpb",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 1662116,
+      children: Map(4) {
+        "hjgwcmh" => <ref *104> Node {
+          name: "hjgwcmh",
+          parent: [Circular *103],
+          isDirectory: true,
+          size: 1002118,
+          children: Map(3) {
+            "bbjhc" => Node {
+              name: "bbjhc",
+              parent: [Circular *104],
+              isDirectory: false,
+              size: 92277,
+              children: Map(0) {}
+            },
+            "fmst" => <ref *105> Node {
+              name: "fmst",
+              parent: [Circular *104],
+              isDirectory: true,
+              size: 655150,
+              children: Map(3) {
+                "cpqhb.jsf" => Node {
+                  name: "cpqhb.jsf",
+                  parent: [Circular *105],
+                  isDirectory: false,
+                  size: 105833,
+                  children: Map(0) {}
+                },
+                "nhm.zhz" => Node {
+                  name: "nhm.zhz",
+                  parent: [Circular *105],
+                  isDirectory: false,
+                  size: 315858,
+                  children: Map(0) {}
+                },
+                "nztw" => Node {
+                  name: "nztw",
+                  parent: [Circular *105],
+                  isDirectory: false,
+                  size: 233459,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "gzjq" => <ref *106> Node {
+              name: "gzjq",
+              parent: [Circular *104],
+              isDirectory: true,
+              size: 254691,
+              children: Map(2) {
+                "prjqfwf" => <ref *107> Node {
+                  name: "prjqfwf",
+                  parent: [Circular *106],
+                  isDirectory: true,
+                  size: 151003,
+                  children: Map(1) {
+                    "jnmgdb.rhn" => Node {
+                      name: "jnmgdb.rhn",
+                      parent: [Circular *107],
+                      isDirectory: false,
+                      size: 151003,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "ssdlqcrw" => <ref *108> Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *106],
+                  isDirectory: true,
+                  size: 103688,
+                  children: Map(1) {
+                    "cpqhb.jsf" => Node {
+                      name: "cpqhb.jsf",
+                      parent: [Circular *108],
+                      isDirectory: false,
+                      size: 103688,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pcffhsw.bdm" => Node {
+          name: "pcffhsw.bdm",
+          parent: [Circular *103],
+          isDirectory: false,
+          size: 286054,
+          children: Map(0) {}
+        },
+        "pvczm.cfw" => Node {
+          name: "pvczm.cfw",
+          parent: [Circular *103],
+          isDirectory: false,
+          size: 260831,
+          children: Map(0) {}
+        },
+        "vhvn" => <ref *109> Node {
+          name: "vhvn",
+          parent: [Circular *103],
+          isDirectory: true,
+          size: 113113,
+          children: Map(2) {
+            "cpqhb.jsf" => Node {
+              name: "cpqhb.jsf",
+              parent: [Circular *109],
+              isDirectory: false,
+              size: 14901,
+              children: Map(0) {}
+            },
+            "tztzq" => Node {
+              name: "tztzq",
+              parent: [Circular *109],
+              isDirectory: false,
+              size: 98212,
+              children: Map(0) {}
+            }
+          }
+        }
+      }
+    },
+    "mddr" => <ref *110> Node {
+      name: "mddr",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 134280,
+      children: Map(1) {
+        "qpfjp" => <ref *111> Node {
+          name: "qpfjp",
+          parent: [Circular *110],
+          isDirectory: true,
+          size: 134280,
+          children: Map(1) {
+            "cfhv" => <ref *112> Node {
+              name: "cfhv",
+              parent: [Circular *111],
+              isDirectory: true,
+              size: 134280,
+              children: Map(1) {
+                "ssdlqcrw" => <ref *113> Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *112],
+                  isDirectory: true,
+                  size: 134280,
+                  children: Map(1) {
+                    "vvnpvrqb.hdv" => Node {
+                      name: "vvnpvrqb.hdv",
+                      parent: [Circular *113],
+                      isDirectory: false,
+                      size: 134280,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mthvntdd" => <ref *114> Node {
+      name: "mthvntdd",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 11686814,
+      children: Map(11) {
+        "bcdcz" => <ref *115> Node {
+          name: "bcdcz",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 1540498,
+          children: Map(7) {
+            "dtbzzl.hsv" => Node {
+              name: "dtbzzl.hsv",
+              parent: [Circular *115],
+              isDirectory: false,
+              size: 213688,
+              children: Map(0) {}
+            },
+            "lbvbc" => <ref *116> Node {
+              name: "lbvbc",
+              parent: [Circular *115],
+              isDirectory: true,
+              size: 328642,
+              children: Map(2) {
+                "fpfpwtf.zfz" => Node {
+                  name: "fpfpwtf.zfz",
+                  parent: [Circular *116],
+                  isDirectory: false,
+                  size: 224836,
+                  children: Map(0) {}
+                },
+                "nztw" => Node {
+                  name: "nztw",
+                  parent: [Circular *116],
+                  isDirectory: false,
+                  size: 103806,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "nndbhrf" => Node {
+              name: "nndbhrf",
+              parent: [Circular *115],
+              isDirectory: false,
+              size: 100222,
+              children: Map(0) {}
+            },
+            "rqnsfbz.rmf" => Node {
+              name: "rqnsfbz.rmf",
+              parent: [Circular *115],
+              isDirectory: false,
+              size: 115627,
+              children: Map(0) {}
+            },
+            "tvgclpsc" => <ref *117> Node {
+              name: "tvgclpsc",
+              parent: [Circular *115],
+              isDirectory: true,
+              size: 359720,
+              children: Map(2) {
+                "cpqhb.jsf" => Node {
+                  name: "cpqhb.jsf",
+                  parent: [Circular *117],
+                  isDirectory: false,
+                  size: 76900,
+                  children: Map(0) {}
+                },
+                "qtffdmsg" => Node {
+                  name: "qtffdmsg",
+                  parent: [Circular *117],
+                  isDirectory: false,
+                  size: 282820,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *115],
+              isDirectory: false,
+              size: 258672,
+              children: Map(0) {}
+            },
+            "whgmd" => Node {
+              name: "whgmd",
+              parent: [Circular *115],
+              isDirectory: false,
+              size: 163927,
+              children: Map(0) {}
+            }
+          }
+        },
+        "cngbf" => <ref *118> Node {
+          name: "cngbf",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 2688184,
+          children: Map(4) {
+            "hstph" => <ref *119> Node {
+              name: "hstph",
+              parent: [Circular *118],
+              isDirectory: true,
+              size: 172788,
+              children: Map(1) {
+                "pjts.qmt" => Node {
+                  name: "pjts.qmt",
+                  parent: [Circular *119],
+                  isDirectory: false,
+                  size: 172788,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "jqvnttq.dsh" => Node {
+              name: "jqvnttq.dsh",
+              parent: [Circular *118],
+              isDirectory: false,
+              size: 12089,
+              children: Map(0) {}
+            },
+            "nztw.sqj" => Node {
+              name: "nztw.sqj",
+              parent: [Circular *118],
+              isDirectory: false,
+              size: 38052,
+              children: Map(0) {}
+            },
+            "qrnpjz" => <ref *120> Node {
+              name: "qrnpjz",
+              parent: [Circular *118],
+              isDirectory: true,
+              size: 2465255,
+              children: Map(3) {
+                "blzc" => <ref *121> Node {
+                  name: "blzc",
+                  parent: [Circular *120],
+                  isDirectory: true,
+                  size: 108342,
+                  children: Map(1) {
+                    "nhm.zhz" => Node {
+                      name: "nhm.zhz",
+                      parent: [Circular *121],
+                      isDirectory: false,
+                      size: 108342,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "rvl" => <ref *122> Node {
+                  name: "rvl",
+                  parent: [Circular *120],
+                  isDirectory: true,
+                  size: 774194,
+                  children: Map(2) {
+                    "bcrf" => <ref *123> Node {
+                      name: "bcrf",
+                      parent: [Circular *122],
+                      isDirectory: true,
+                      size: 325278,
+                      children: Map(4) {
+                        "cpqhb.jsf" => Node {
+                          name: "cpqhb.jsf",
+                          parent: [Circular *123],
+                          isDirectory: false,
+                          size: 182498,
+                          children: Map(0) {}
+                        },
+                        "dcb" => <ref *124> Node {
+                          name: "dcb",
+                          parent: [Circular *123],
+                          isDirectory: true,
+                          size: 18316,
+                          children: Map(1) {
+                            "zlgjzcjv" => <ref *125> Node {
+                              name: "zlgjzcjv",
+                              parent: [Circular *124],
+                              isDirectory: true,
+                              size: 18316,
+                              children: Map(1) {
+                                "cpqhb.jsf" => Node {
+                                  name: "cpqhb.jsf",
+                                  parent: [Circular *125],
+                                  isDirectory: false,
+                                  size: 18316,
+                                  children: Map(0) {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ggsq" => Node {
+                          name: "ggsq",
+                          parent: [Circular *123],
+                          isDirectory: false,
+                          size: 14228,
+                          children: Map(0) {}
+                        },
+                        "gnhvtgm" => <ref *126> Node {
+                          name: "gnhvtgm",
+                          parent: [Circular *123],
+                          isDirectory: true,
+                          size: 110236,
+                          children: Map(1) {
+                            "nhm.zhz" => Node {
+                              name: "nhm.zhz",
+                              parent: [Circular *126],
+                              isDirectory: false,
+                              size: 110236,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "sjbr" => <ref *127> Node {
+                      name: "sjbr",
+                      parent: [Circular *122],
+                      isDirectory: true,
+                      size: 448916,
+                      children: Map(2) {
+                        "cscbp" => Node {
+                          name: "cscbp",
+                          parent: [Circular *127],
+                          isDirectory: false,
+                          size: 133009,
+                          children: Map(0) {}
+                        },
+                        "vtpmnwt" => Node {
+                          name: "vtpmnwt",
+                          parent: [Circular *127],
+                          isDirectory: false,
+                          size: 315907,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "zvhtzqqc" => <ref *128> Node {
+                  name: "zvhtzqqc",
+                  parent: [Circular *120],
+                  isDirectory: true,
+                  size: 1582719,
+                  children: Map(6) {
+                    "fglfpn" => <ref *129> Node {
+                      name: "fglfpn",
+                      parent: [Circular *128],
+                      isDirectory: true,
+                      size: 39153,
+                      children: Map(1) {
+                        "dvhjpfc" => Node {
+                          name: "dvhjpfc",
+                          parent: [Circular *129],
+                          isDirectory: false,
+                          size: 39153,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "gtzrq" => <ref *130> Node {
+                      name: "gtzrq",
+                      parent: [Circular *128],
+                      isDirectory: true,
+                      size: 60625,
+                      children: Map(1) {
+                        "sqljdlpz.wpw" => Node {
+                          name: "sqljdlpz.wpw",
+                          parent: [Circular *130],
+                          isDirectory: false,
+                          size: 60625,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "hfgdcf" => <ref *131> Node {
+                      name: "hfgdcf",
+                      parent: [Circular *128],
+                      isDirectory: true,
+                      size: 36016,
+                      children: Map(1) {
+                        "qdvnn.pbt" => Node {
+                          name: "qdvnn.pbt",
+                          parent: [Circular *131],
+                          isDirectory: false,
+                          size: 36016,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "ltbzhjn" => Node {
+                      name: "ltbzhjn",
+                      parent: [Circular *128],
+                      isDirectory: false,
+                      size: 274977,
+                      children: Map(0) {}
+                    },
+                    "msc" => <ref *132> Node {
+                      name: "msc",
+                      parent: [Circular *128],
+                      isDirectory: true,
+                      size: 742497,
+                      children: Map(3) {
+                        "cpqhb.jsf" => Node {
+                          name: "cpqhb.jsf",
+                          parent: [Circular *132],
+                          isDirectory: false,
+                          size: 56601,
+                          children: Map(0) {}
+                        },
+                        "hrz" => <ref *133> Node {
+                          name: "hrz",
+                          parent: [Circular *132],
+                          isDirectory: true,
+                          size: 528016,
+                          children: Map(2) {
+                            "fhngt.mlb" => Node {
+                              name: "fhngt.mlb",
+                              parent: [Circular *133],
+                              isDirectory: false,
+                              size: 241511,
+                              children: Map(0) {}
+                            },
+                            "nhm.zhz" => Node {
+                              name: "nhm.zhz",
+                              parent: [Circular *133],
+                              isDirectory: false,
+                              size: 286505,
+                              children: Map(0) {}
+                            }
+                          }
+                        },
+                        "vlhllqz" => <ref *134> Node {
+                          name: "vlhllqz",
+                          parent: [Circular *132],
+                          isDirectory: true,
+                          size: 157880,
+                          children: Map(1) {
+                            "nhm.zhz" => Node {
+                              name: "nhm.zhz",
+                              parent: [Circular *134],
+                              isDirectory: false,
+                              size: 157880,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "ssdlqcrw" => <ref *135> Node {
+                      name: "ssdlqcrw",
+                      parent: [Circular *128],
+                      isDirectory: true,
+                      size: 429451,
+                      children: Map(3) {
+                        "dssrvr" => Node {
+                          name: "dssrvr",
+                          parent: [Circular *135],
+                          isDirectory: false,
+                          size: 121507,
+                          children: Map(0) {}
+                        },
+                        "lvtwlb.whn" => Node {
+                          name: "lvtwlb.whn",
+                          parent: [Circular *135],
+                          isDirectory: false,
+                          size: 295897,
+                          children: Map(0) {}
+                        },
+                        "pjts.gqc" => Node {
+                          name: "pjts.gqc",
+                          parent: [Circular *135],
+                          isDirectory: false,
+                          size: 12047,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cwtvl" => Node {
+          name: "cwtvl",
+          parent: [Circular *114],
+          isDirectory: false,
+          size: 62389,
+          children: Map(0) {}
+        },
+        "mqjjbq" => <ref *136> Node {
+          name: "mqjjbq",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 4254868,
+          children: Map(7) {
+            "blbmb.fcv" => Node {
+              name: "blbmb.fcv",
+              parent: [Circular *136],
+              isDirectory: false,
+              size: 157818,
+              children: Map(0) {}
+            },
+            "ccppbmqb.pbt" => Node {
+              name: "ccppbmqb.pbt",
+              parent: [Circular *136],
+              isDirectory: false,
+              size: 119103,
+              children: Map(0) {}
+            },
+            "cpqhb.jsf" => Node {
+              name: "cpqhb.jsf",
+              parent: [Circular *136],
+              isDirectory: false,
+              size: 141463,
+              children: Map(0) {}
+            },
+            "drhmws.fdd" => Node {
+              name: "drhmws.fdd",
+              parent: [Circular *136],
+              isDirectory: false,
+              size: 197900,
+              children: Map(0) {}
+            },
+            "fmvp" => <ref *137> Node {
+              name: "fmvp",
+              parent: [Circular *136],
+              isDirectory: true,
+              size: 2674857,
+              children: Map(9) {
+                "dhnn" => <ref *138> Node {
+                  name: "dhnn",
+                  parent: [Circular *137],
+                  isDirectory: true,
+                  size: 232575,
+                  children: Map(2) {
+                    "qcjsdg.zfg" => Node {
+                      name: "qcjsdg.zfg",
+                      parent: [Circular *138],
+                      isDirectory: false,
+                      size: 173921,
+                      children: Map(0) {}
+                    },
+                    "vhvn.csb" => Node {
+                      name: "vhvn.csb",
+                      parent: [Circular *138],
+                      isDirectory: false,
+                      size: 58654,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "dlcvwqw" => <ref *139> Node {
+                  name: "dlcvwqw",
+                  parent: [Circular *137],
+                  isDirectory: true,
+                  size: 285116,
+                  children: Map(1) {
+                    "zjb" => Node {
+                      name: "zjb",
+                      parent: [Circular *139],
+                      isDirectory: false,
+                      size: 285116,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "hnv.tlr" => Node {
+                  name: "hnv.tlr",
+                  parent: [Circular *137],
+                  isDirectory: false,
+                  size: 131432,
+                  children: Map(0) {}
+                },
+                "jzqt" => <ref *140> Node {
+                  name: "jzqt",
+                  parent: [Circular *137],
+                  isDirectory: true,
+                  size: 1284585,
+                  children: Map(7) {
+                    "clmzwnf" => Node {
+                      name: "clmzwnf",
+                      parent: [Circular *140],
+                      isDirectory: false,
+                      size: 104478,
+                      children: Map(0) {}
+                    },
+                    "cpqhb.jsf" => Node {
+                      name: "cpqhb.jsf",
+                      parent: [Circular *140],
+                      isDirectory: false,
+                      size: 299622,
+                      children: Map(0) {}
+                    },
+                    "jjdgzwnq" => Node {
+                      name: "jjdgzwnq",
+                      parent: [Circular *140],
+                      isDirectory: false,
+                      size: 301236,
+                      children: Map(0) {}
+                    },
+                    "nsvlqq" => <ref *141> Node {
+                      name: "nsvlqq",
+                      parent: [Circular *140],
+                      isDirectory: true,
+                      size: 325305,
+                      children: Map(2) {
+                        "dtbzzl.htn" => Node {
+                          name: "dtbzzl.htn",
+                          parent: [Circular *141],
+                          isDirectory: false,
+                          size: 111712,
+                          children: Map(0) {}
+                        },
+                        "hvzlmtj.ztr" => Node {
+                          name: "hvzlmtj.ztr",
+                          parent: [Circular *141],
+                          isDirectory: false,
+                          size: 213593,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "vhvn" => Node {
+                      name: "vhvn",
+                      parent: [Circular *140],
+                      isDirectory: false,
+                      size: 136737,
+                      children: Map(0) {}
+                    },
+                    "vmp" => <ref *142> Node {
+                      name: "vmp",
+                      parent: [Circular *140],
+                      isDirectory: true,
+                      size: 104275,
+                      children: Map(1) {
+                        "jjdgzwnq" => Node {
+                          name: "jjdgzwnq",
+                          parent: [Circular *142],
+                          isDirectory: false,
+                          size: 104275,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "wrd.jsz" => Node {
+                      name: "wrd.jsz",
+                      parent: [Circular *140],
+                      isDirectory: false,
+                      size: 12932,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "nhm.zhz" => Node {
+                  name: "nhm.zhz",
+                  parent: [Circular *137],
+                  isDirectory: false,
+                  size: 98127,
+                  children: Map(0) {}
+                },
+                "nvsdbjj" => <ref *143> Node {
+                  name: "nvsdbjj",
+                  parent: [Circular *137],
+                  isDirectory: true,
+                  size: 400818,
+                  children: Map(2) {
+                    "jjdgzwnq" => Node {
+                      name: "jjdgzwnq",
+                      parent: [Circular *143],
+                      isDirectory: false,
+                      size: 180999,
+                      children: Map(0) {}
+                    },
+                    "vhvn" => Node {
+                      name: "vhvn",
+                      parent: [Circular *143],
+                      isDirectory: false,
+                      size: 219819,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "pjts" => <ref *144> Node {
+                  name: "pjts",
+                  parent: [Circular *137],
+                  isDirectory: true,
+                  size: 111715,
+                  children: Map(1) {
+                    "npzn" => Node {
+                      name: "npzn",
+                      parent: [Circular *144],
+                      isDirectory: false,
+                      size: 111715,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "pvczm.cfw" => Node {
+                  name: "pvczm.cfw",
+                  parent: [Circular *137],
+                  isDirectory: false,
+                  size: 9179,
+                  children: Map(0) {}
+                },
+                "vqfsh.smp" => Node {
+                  name: "vqfsh.smp",
+                  parent: [Circular *137],
+                  isDirectory: false,
+                  size: 121310,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "rhldnjlt" => <ref *145> Node {
+              name: "rhldnjlt",
+              parent: [Circular *136],
+              isDirectory: true,
+              size: 788698,
+              children: Map(2) {
+                "ffhcbvmf" => <ref *146> Node {
+                  name: "ffhcbvmf",
+                  parent: [Circular *145],
+                  isDirectory: true,
+                  size: 247668,
+                  children: Map(1) {
+                    "cpqhb.jsf" => Node {
+                      name: "cpqhb.jsf",
+                      parent: [Circular *146],
+                      isDirectory: false,
+                      size: 247668,
+                      children: Map(0) {}
+                    }
+                  }
+                },
+                "vprlq" => <ref *147> Node {
+                  name: "vprlq",
+                  parent: [Circular *145],
+                  isDirectory: true,
+                  size: 541030,
+                  children: Map(3) {
+                    "jmmtz.fzt" => Node {
+                      name: "jmmtz.fzt",
+                      parent: [Circular *147],
+                      isDirectory: false,
+                      size: 168090,
+                      children: Map(0) {}
+                    },
+                    "nhm.zhz" => Node {
+                      name: "nhm.zhz",
+                      parent: [Circular *147],
+                      isDirectory: false,
+                      size: 68360,
+                      children: Map(0) {}
+                    },
+                    "vqfsh.smp" => Node {
+                      name: "vqfsh.smp",
+                      parent: [Circular *147],
+                      isDirectory: false,
+                      size: 304580,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            },
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *136],
+              isDirectory: false,
+              size: 175029,
+              children: Map(0) {}
+            }
+          }
+        },
+        "nhblb" => <ref *148> Node {
+          name: "nhblb",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 1922310,
+          children: Map(7) {
+            "hrgsrbnj.tch" => Node {
+              name: "hrgsrbnj.tch",
+              parent: [Circular *148],
+              isDirectory: false,
+              size: 154794,
+              children: Map(0) {}
+            },
+            "nfwl" => <ref *149> Node {
+              name: "nfwl",
+              parent: [Circular *148],
+              isDirectory: true,
+              size: 989965,
+              children: Map(2) {
+                "lqs" => <ref *150> Node {
+                  name: "lqs",
+                  parent: [Circular *149],
+                  isDirectory: true,
+                  size: 700074,
+                  children: Map(3) {
+                    "mbcft" => <ref *151> Node {
+                      name: "mbcft",
+                      parent: [Circular *150],
+                      isDirectory: true,
+                      size: 272856,
+                      children: Map(2) {
+                        "bdnr" => Node {
+                          name: "bdnr",
+                          parent: [Circular *151],
+                          isDirectory: false,
+                          size: 78188,
+                          children: Map(0) {}
+                        },
+                        "pjts" => Node {
+                          name: "pjts",
+                          parent: [Circular *151],
+                          isDirectory: false,
+                          size: 194668,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "ntmvt" => <ref *152> Node {
+                      name: "ntmvt",
+                      parent: [Circular *150],
+                      isDirectory: true,
+                      size: 262298,
+                      children: Map(2) {
+                        "nhm.zhz" => Node {
+                          name: "nhm.zhz",
+                          parent: [Circular *152],
+                          isDirectory: false,
+                          size: 75647,
+                          children: Map(0) {}
+                        },
+                        "scsvrqpf.jhb" => Node {
+                          name: "scsvrqpf.jhb",
+                          parent: [Circular *152],
+                          isDirectory: false,
+                          size: 186651,
+                          children: Map(0) {}
+                        }
+                      }
+                    },
+                    "nztw" => <ref *153> Node {
+                      name: "nztw",
+                      parent: [Circular *150],
+                      isDirectory: true,
+                      size: 164920,
+                      children: Map(1) {
+                        "vqfsh.smp" => Node {
+                          name: "vqfsh.smp",
+                          parent: [Circular *153],
+                          isDirectory: false,
+                          size: 164920,
+                          children: Map(0) {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "mlvnlz" => <ref *154> Node {
+                  name: "mlvnlz",
+                  parent: [Circular *149],
+                  isDirectory: true,
+                  size: 289891,
+                  children: Map(1) {
+                    "wjf" => Node {
+                      name: "wjf",
+                      parent: [Circular *154],
+                      isDirectory: false,
+                      size: 289891,
+                      children: Map(0) {}
+                    }
+                  }
+                }
+              }
+            },
+            "ptc" => <ref *155> Node {
+              name: "ptc",
+              parent: [Circular *148],
+              isDirectory: true,
+              size: 190002,
+              children: Map(1) {
+                "pjts.vmh" => Node {
+                  name: "pjts.vmh",
+                  parent: [Circular *155],
+                  isDirectory: false,
+                  size: 190002,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "rng" => <ref *156> Node {
+              name: "rng",
+              parent: [Circular *148],
+              isDirectory: true,
+              size: 39093,
+              children: Map(1) {
+                "nhm.zhz" => Node {
+                  name: "nhm.zhz",
+                  parent: [Circular *156],
+                  isDirectory: false,
+                  size: 39093,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "swtt.tct" => Node {
+              name: "swtt.tct",
+              parent: [Circular *148],
+              isDirectory: false,
+              size: 50110,
+              children: Map(0) {}
+            },
+            "vhvn" => <ref *157> Node {
+              name: "vhvn",
+              parent: [Circular *148],
+              isDirectory: true,
+              size: 275854,
+              children: Map(1) {
+                "hbv" => Node {
+                  name: "hbv",
+                  parent: [Circular *157],
+                  isDirectory: false,
+                  size: 275854,
+                  children: Map(0) {}
+                }
+              }
+            },
+            "vlj" => <ref *158> Node {
+              name: "vlj",
+              parent: [Circular *148],
+              isDirectory: true,
+              size: 222492,
+              children: Map(2) {
+                "qqqrm" => <ref *159> Node {
+                  name: "qqqrm",
+                  parent: [Circular *158],
+                  isDirectory: true,
+                  size: 19102,
+                  children: Map(1) {
+                    "wcpllh" => <ref *160> Node {
+                      name: "wcpllh",
+                      parent: [Circular *159],
+                      isDirectory: true,
+                      size: 19102,
+                      children: Map(1) {
+                        "pwg" => <ref *161> Node {
+                          name: "pwg",
+                          parent: [Circular *160],
+                          isDirectory: true,
+                          size: 19102,
+                          children: Map(1) {
+                            "dtbzzl.qvp" => Node {
+                              name: "dtbzzl.qvp",
+                              parent: [Circular *161],
+                              isDirectory: false,
+                              size: 19102,
+                              children: Map(0) {}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ssdlqcrw" => Node {
+                  name: "ssdlqcrw",
+                  parent: [Circular *158],
+                  isDirectory: false,
+                  size: 203390,
+                  children: Map(0) {}
+                }
+              }
+            }
+          }
+        },
+        "pvczm.cfw" => Node {
+          name: "pvczm.cfw",
+          parent: [Circular *114],
+          isDirectory: false,
+          size: 6743,
+          children: Map(0) {}
+        },
+        "ssdlqcrw" => <ref *162> Node {
+          name: "ssdlqcrw",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 181610,
+          children: Map(1) {
+            "vqfsh.smp" => Node {
+              name: "vqfsh.smp",
+              parent: [Circular *162],
+              isDirectory: false,
+              size: 181610,
+              children: Map(0) {}
+            }
+          }
+        },
+        "ttvgr" => <ref *163> Node {
+          name: "ttvgr",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 332119,
+          children: Map(1) {
+            "vpcpd" => <ref *164> Node {
+              name: "vpcpd",
+              parent: [Circular *163],
+              isDirectory: true,
+              size: 332119,
+              children: Map(2) {
+                "mbb.szv" => Node {
+                  name: "mbb.szv",
+                  parent: [Circular *164],
+                  isDirectory: false,
+                  size: 28102,
+                  children: Map(0) {}
+                },
+                "rshrzjhn" => Node {
+                  name: "rshrzjhn",
+                  parent: [Circular *164],
+                  isDirectory: false,
+                  size: 304017,
+                  children: Map(0) {}
+                }
+              }
+            }
+          }
+        },
+        "vdmm" => <ref *165> Node {
+          name: "vdmm",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 95079,
+          children: Map(1) {
+            "tssjcd.lfg" => Node {
+              name: "tssjcd.lfg",
+              parent: [Circular *165],
+              isDirectory: false,
+              size: 95079,
+              children: Map(0) {}
+            }
+          }
+        },
+        "wnhnwjm" => <ref *166> Node {
+          name: "wnhnwjm",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 309278,
+          children: Map(3) {
+            "mmhcgsc.zjf" => Node {
+              name: "mmhcgsc.zjf",
+              parent: [Circular *166],
+              isDirectory: false,
+              size: 67931,
+              children: Map(0) {}
+            },
+            "nqpzsf.ccc" => Node {
+              name: "nqpzsf.ccc",
+              parent: [Circular *166],
+              isDirectory: false,
+              size: 22062,
+              children: Map(0) {}
+            },
+            "trr.vcn" => Node {
+              name: "trr.vcn",
+              parent: [Circular *166],
+              isDirectory: false,
+              size: 219285,
+              children: Map(0) {}
+            }
+          }
+        },
+        "zdvbsb" => <ref *167> Node {
+          name: "zdvbsb",
+          parent: [Circular *114],
+          isDirectory: true,
+          size: 293736,
+          children: Map(1) {
+            "dtbzzl.ftj" => Node {
+              name: "dtbzzl.ftj",
+              parent: [Circular *167],
+              isDirectory: false,
+              size: 293736,
+              children: Map(0) {}
+            }
+          }
+        }
+      }
+    },
+    "pjts.dzh" => Node {
+      name: "pjts.dzh",
+      parent: [Circular *1],
+      isDirectory: false,
+      size: 55644,
+      children: Map(0) {}
+    },
+    "ptzsl" => <ref *168> Node {
+      name: "ptzsl",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 26404,
+      children: Map(1) {
+        "jnsdzmbd" => Node {
+          name: "jnsdzmbd",
+          parent: [Circular *168],
+          isDirectory: false,
+          size: 26404,
+          children: Map(0) {}
+        }
+      }
+    },
+    "wmqc" => <ref *169> Node {
+      name: "wmqc",
+      parent: [Circular *1],
+      isDirectory: true,
+      size: 812195,
+      children: Map(4) {
+        "dtbzzl" => <ref *170> Node {
+          name: "dtbzzl",
+          parent: [Circular *169],
+          isDirectory: true,
+          size: 189696,
+          children: Map(1) {
+            "hpzgnb" => <ref *171> Node {
+              name: "hpzgnb",
+              parent: [Circular *170],
+              isDirectory: true,
+              size: 189696,
+              children: Map(1) {
+                "sbmdrbm" => Node {
+                  name: "sbmdrbm",
+                  parent: [Circular *171],
+                  isDirectory: false,
+                  size: 189696,
+                  children: Map(0) {}
+                }
+              }
+            }
+          }
+        },
+        "hdzmzc" => <ref *172> Node {
+          name: "hdzmzc",
+          parent: [Circular *169],
+          isDirectory: true,
+          size: 143510,
+          children: Map(1) {
+            "dtbzzl.dmp" => Node {
+              name: "dtbzzl.dmp",
+              parent: [Circular *172],
+              isDirectory: false,
+              size: 143510,
+              children: Map(0) {}
+            }
+          }
+        },
+        "nmmpwqvz" => <ref *173> Node {
+          name: "nmmpwqvz",
+          parent: [Circular *169],
+          isDirectory: true,
+          size: 276725,
+          children: Map(1) {
+            "nhm.zhz" => Node {
+              name: "nhm.zhz",
+              parent: [Circular *173],
+              isDirectory: false,
+              size: 276725,
+              children: Map(0) {}
+            }
+          }
+        },
+        "qjnm" => <ref *174> Node {
+          name: "qjnm",
+          parent: [Circular *169],
+          isDirectory: true,
+          size: 202264,
+          children: Map(1) {
+            "cpqhb.jsf" => Node {
+              name: "cpqhb.jsf",
+              parent: [Circular *174],
+              isDirectory: false,
+              size: 202264,
+              children: Map(0) {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+undefined 919137

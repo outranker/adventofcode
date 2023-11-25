@@ -1,4 +1,4 @@
-const t = await Deno.readTextFile("./data.txt");
+const t = await Deno.readTextFile("2022/day-9/data.txt");
 type Point = {
   x: number;
   y: number;
@@ -24,6 +24,14 @@ const shouldTailMove = () => {
     return false;
   }
   return true;
+};
+const shouldTailMoveDiagonally = () => {
+  if (
+    (Math.abs(head.x - tail.x) === 1 && Math.abs(head.y - tail.y) === 2) ||
+    (Math.abs(head.x - tail.x) === 2 && Math.abs(head.y - tail.y) === 1)
+  ) {
+    return;
+  }
 };
 
 // todo: sometimes, tail needs to move diagonally instead of plainly following directions

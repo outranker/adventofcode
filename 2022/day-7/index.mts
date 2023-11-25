@@ -16,8 +16,17 @@ class Node {
     this.size = 0;
     this.children = new Map();
   }
+  public setSize(size: number) {
+    this.size = +size;
+  }
+  public setParent(value: Node) {
+    this.parent = value;
+  }
+  public addChild(name: string, value: Node) {
+    this.children.set(name, value);
+  }
 }
-const arr: string[] = [];
+
 const rootNode = new Node("/", true);
 let currentPosition = rootNode;
 
@@ -38,10 +47,90 @@ for (const line of array) {
     }
   } else {
     // ! this is not a command, but probs dir/file name line
+    const [typeOrFileSize, dirOrFileName] = line.split(" ");
+    const newNode = new Node(dirOrFileName, typeOrFileSize === "dir");
+    newNode.setParent(currentPosition);
+    currentPosition.addChild(dirOrFileName, newNode);
+    if (typeOrFileSize !== "dir") {
+      newNode.setSize(+typeOrFileSize as unknown as number);
+    }
   }
 }
 
-console.log(arr);
+function dfsProcess(node: Node): number {
+  if (node.isDirectory) {
+    let totalSum = 0;
+    node.children.forEach((value, _key, _map) => {
+      if (value.isDirectory) {
+        totalSum += dfsProcess(value);
+      } else {
+        totalSum += value.size;
+      }
+    });
+    node.setSize(totalSum);
+    return totalSum;
+  } else {
+    return node.size;
+  }
+}
+/** ************** PART 1 ****************** */
+const HUNDRED_K = 100_000;
+let partOneRes = 0;
+function findPartOneResult(node: Node) {
+  if (node.isDirectory) {
+    if (node.size <= HUNDRED_K) {
+      partOneRes += node.size;
+    }
+    if (node.children.size) {
+      node.children.forEach((value, _key, _map) => {
+        if (value.isDirectory) {
+          findPartOneResult(value);
+        }
+      });
+    }
+  } else {
+    return;
+  }
+}
+
+dfsProcess(rootNode);
+// console.dir(rootNode, { depth: null }); // this can be used to print the whole object with map
+console.log(
+  "find total dir size whose size is at most HUNDRED_K",
+  findPartOneResult(rootNode),
+  partOneRes
+);
+
+/** ************** PART 2 ****************** */
+const TOTAL_DISK_SPACE = 70_000_000;
+const REQUIRED_FREE_SPACE_FOR_UPGRADE = 30_000_000;
+const currentUsedSpace = rootNode.size; // 42_805_968
+const currentFreeSpace = TOTAL_DISK_SPACE - currentUsedSpace; // 27_194_032
+const needToDeleteSpace = REQUIRED_FREE_SPACE_FOR_UPGRADE - currentFreeSpace; // 12_805_968
+const arr: number[] = [];
+console.log(currentUsedSpace);
+console.log(needToDeleteSpace);
+function loopAllToFindSmallest(node: Node) {
+  console.log("called");
+  if (node.isDirectory) {
+    if (node.size >= needToDeleteSpace) {
+      arr.push(node.size);
+    }
+    if (node.children.size) {
+      node.children.forEach((value, _key, _map) => {
+        if (value.isDirectory) {
+          loopAllToFindSmallest(value);
+        }
+      });
+    }
+  } else {
+    return;
+  }
+}
+loopAllToFindSmallest(rootNode);
+console.log("smallest dir that can be deleted: ", {
+  n: arr.sort((a, b) => a - b)[0],
+}); // 17_428_128
 /** already answered
  *
  *
