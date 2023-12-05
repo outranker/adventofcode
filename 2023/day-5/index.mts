@@ -14,7 +14,6 @@ const mappings = array
       source: t[0],
       destination: t[1],
       numbers: array.reduce((acc: string[], curr: string) => {
-        console.log(acc);
         if (checker && curr === "") {
           checker = false;
           return [...acc];
@@ -33,16 +32,40 @@ const mappings = array
     };
   });
 console.log(mappings);
-const obj = {};
+const obj: any = {};
 console.log(seeds);
-seeds.forEach((seed, index) => {
-  mappings.forEach((map) => {
-    for (let i = 0; i < map.numbers.length; i++) {
-      const range = map.numbers[i][2];
+mappings.forEach((map) => {
+  (map.numbers as unknown as number[][]).forEach((element) => {
+    const range = element[2];
+    // console.log(range);
+    for (let i = 0; i < range; i++) {
+      const key = +element[1] + i;
+      const value = +element[0] + i;
+      obj[map.source + map.destination] = {
+        ...obj[map.source + map.destination],
+        [key]: value,
+      };
     }
   });
-  // console.log(line);
 });
+const arr = [];
+seeds.forEach((seed, index) => {
+  // if (index + 1 === se);
+  let curr;
+  for (const key of Object.values(obj)) {
+    console.log(key);
+  }
+});
+
+// console.log(obj);
+// seeds.forEach((seed, index) => {
+//   mappings.forEach((map) => {
+//     for (let i = 0; i < map.numbers.length; i++) {
+//       const range = map.numbers[i][2];
+//     }
+//   });
+//   // console.log(line);
+// });
 // ************** part 2 ***********
 
 function findDuplicates(arr: string[]): string[] {
