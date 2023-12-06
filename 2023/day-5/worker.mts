@@ -17,7 +17,6 @@ self.onmessage = (evt: {
       const range = +element[2];
       const source = +element[1];
       const destination = +element[0];
-      if (+evt.data.seed === 14) console.log("before", val);
       if (val >= source && val < source + range) {
         const temp = destination + (val - source);
         if (temp) {
@@ -27,11 +26,8 @@ self.onmessage = (evt: {
           break foreach;
         }
       }
-      if (+evt.data.seed === 14)
-        console.log("source", source, "destination", destination, range, val);
     }
   }
 
-  console.log("done!", val);
   self.postMessage(+val);
 };
