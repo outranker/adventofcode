@@ -98,21 +98,24 @@ const arr: string[] = [];
 const rangeArr = seedsRange[argIndex];
 
 const from = Math.min(+rangeArr[0], +rangeArr[1]);
-
 const to = Math.max(+rangeArr[0], +rangeArr[1]);
+let min;
+const len = to - from;
+const tenPercent = Math.floor(len / 10);
 for (let i = from; i < to; i++) {
-  const worker = new Worker(new URL("worker.mts", import.meta.url).href, {
-    type: "module",
-  });
-  worker.postMessage({ seed: i, mappings });
+  if ((i - from) % tenPercent === 0) {
+    console.log(`Loop is ${((i - from) / len) * 100}% complete`);
+  }
+  const val = someFunction(i, mappings);
 
-  worker.onmessage = (evt) => arr.push(evt.data);
+  if (min === undefined) {
+    min = val;
+  } else {
+    min = Math.min(min, val);
+  }
 }
-console.log("answer", arr.sort((a, b) => a - b)[0]);
-setInterval(
-  () => console.log("answer", arr.sort((a, b) => a - b)[0]),
-  60 * 1000
-);
+console.log("answer", min);
+
 console.log("i am exiting");
 // await new Promise((resolve) => setTimeout(resolve, 2000));
 // submitted answers for part 1
@@ -122,3 +125,35 @@ console.log("i am exiting");
 
 // submitted answers for part 2
 // 6874754
+// 314779387
+
+function someFunction(
+  seed: number,
+  mappings: {
+    source: string;
+    destination: string;
+    numbers: string[][];
+  }[]
+): number {
+  //   console.log("hello from worker thread", evt.data.mappings);
+  let val = +seed;
+  for (const mapping of mappings) {
+    foreach: for (let i = 0; i < mapping.numbers.length; i++) {
+      const element = mapping.numbers[i];
+
+      const range = +element[2];
+      const source = +element[1];
+      const destination = +element[0];
+      if (val >= source && val < source + range) {
+        const temp = destination + (val - source);
+        if (temp) {
+          val = temp;
+          break foreach;
+        } else {
+          break foreach;
+        }
+      }
+    }
+  }
+  return val;
+}

@@ -1,4 +1,4 @@
-const t = await Deno.readTextFile("2023/day-6/data-test.txt");
+const t = await Deno.readTextFile("2023/day-6/data.txt");
 
 const array: string[] = t.split("\n");
 const time = array[0]
@@ -14,7 +14,7 @@ console.log(array.length);
 console.log(time);
 console.log(distance);
 
-const arr;
+let ss = 1;
 let winners: number[] = [];
 for (let i = 0; i < time.length; i++) {
   const gameLastsForMs = +time[i];
@@ -22,20 +22,26 @@ for (let i = 0; i < time.length; i++) {
     const waitMs = j;
     const howMuchLeftAfterWaitMs = gameLastsForMs - waitMs;
     const travellableDistance = howMuchLeftAfterWaitMs * waitMs;
-    console.log({ travellableDistance });
+    // console.log({ travellableDistance });
     if (travellableDistance > +distance[i]) {
       winners.push(waitMs);
-      console.log(j, gameLastsForMs);
+      // console.log(winners.length);
     }
   }
-  break;
+
+  ss = ss * winners.length;
+  winners = [];
+  // break;
 }
-console.log(winners);
-console.log(arr);
+console.log(ss);
+// console.log(winners);
+// console.log(arr);
 
 // ************** part 2 ***********
 
 // submitted answers for part 1
+// 1008
+// 588588
 
 // submitted answers for part 2
-// 6874754
+//
