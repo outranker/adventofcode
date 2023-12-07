@@ -13,18 +13,20 @@ const strength = {
   J: 10,
   T: 9,
   9: 8,
-  7: 7,
-  6: 6,
-  5: 5,
-  4: 4,
-  3: 3,
-  2: 2,
+  8: 7,
+  7: 6,
+  6: 5,
+  5: 4,
+  4: 3,
+  3: 2,
+  2: 1,
 } as const;
 for (let i = 0; i < array.length; i++) {
   const [hand, bid] = array[i].split(" ");
   const houseIndex = findHouse(hand.split(""));
   houses.at(houseIndex)!.push({ hand, bid });
 }
+
 for (let j = 0; j < houses.length; j++) {
   const house = houses[j];
   house.sort(
@@ -32,24 +34,44 @@ for (let j = 0; j < houses.length; j++) {
       strength[b.hand[0] as keyof typeof strength] -
       strength[a.hand[0] as keyof typeof strength]
   );
-  for (let h = 0; h < house.length; h++) {
-    const obj = house[h];
-    const { hand } = obj;
+  for (let l = 1; l <= 5; l++) {
+    let from = 0;
+    let to = 0;
 
-    for (let index = 1; index < 5; index++) {
-      let currentString = hand.slice(0, index + 1);
+    for (let h = 0; h < house.length; h++) {
+      const hand = house[h].hand;
+      console.log(">>>", slice(house[from].hand, l));
+      console.log(">>", slice(hand, l));
+      if (slice(house[from].hand, l) === slice(hand, l)) {
+        to = h;
+      } else {
+        sort(house, from, to, l);
+        from = to;
+        // to = from;
+      }
+    }
+    if (l === 2) {
+      console.log("finnish", house);
       break;
     }
   }
 }
-console.log(houses);
+const final = houses.reverse().flatMap((x) => x.reverse());
+// console.log(houses);
+// console.log("", final);
+final.forEach((element, index) => {
+  s += (index + 1) * +element.bid;
+});
 console.log(s);
-function sort(house: House[], from: number, to: number) {
+function slice(s: string, c: number) {
+  return s.slice(0, c);
+}
+function sort(house: House[], from: number, to: number, slice: number) {
   for (let i = from; i <= to; i++) {
     for (let j = from; j <= to - i - 1; j++) {
       if (
-        strength[house[j].hand[0] as keyof typeof strength] <
-        strength[house[j + 1].hand[0] as keyof typeof strength]
+        strength[house[j].hand[slice] as keyof typeof strength] <
+        strength[house[j + 1].hand[slice] as keyof typeof strength]
       ) {
         const temp = house[j];
         house[j] = house[j + 1];
@@ -94,5 +116,7 @@ function findHouse(strings: string[]): number {
   }
 }
 // submitted answers for part 1
+// 252877749
+// 253204949
 
 // submitted answers for part 2
