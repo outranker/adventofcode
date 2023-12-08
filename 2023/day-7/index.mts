@@ -21,50 +21,58 @@ const strength = {
   3: 2,
   2: 1,
 } as const;
+
+function sliceEndIncluded(s: string, c: number) {
+  return s.slice(0, c + 1);
+}
 for (let i = 0; i < array.length; i++) {
   const [hand, bid] = array[i].split(" ");
   const houseIndex = findHouse(hand.split(""));
   houses.at(houseIndex)!.push({ hand, bid });
 }
+function group(hs: House[], y: number) {
+  let m = 0;
+  let st = "";
+  let from = m;
+  let to = m;
+  while (hs[m] !== undefined) {
+    // console.log(hs.length, m);
+    if (st === "") {
+      st = sliceEndIncluded(hs[m].hand, y);
+      m++;
+      to = m;
+    } else {
+      if (st === sliceEndIncluded(hs[m].hand, y)) {
+        m++;
+        to = m;
+      } else {
+        hs = [...sort([...hs], from, to - 1, y + 1)];
+        from = m;
+        to = m;
+        if (hs[m]) st = sliceEndIncluded(hs[m].hand, y);
+        m++;
+      }
+    }
 
+    // console.log(st);
+  }
+  return hs;
+}
 for (let j = 0; j < houses.length; j++) {
-  const house = houses[j];
-  house.sort(
+  houses[j].sort(
     (a, b) =>
       strength[b.hand[0] as keyof typeof strength] -
       strength[a.hand[0] as keyof typeof strength]
   );
-  for (let l = 1; l <= 5; l++) {
-    let from = 0;
-    let to = 0;
-
-    for (let h = 0; h < house.length; h++) {
-      const hand = house[h].hand;
-      console.log(">>>", slice(house[from].hand, l));
-      console.log(">>", slice(hand, l));
-      if (slice(house[from].hand, l) === slice(hand, l)) {
-        to = h;
-      } else {
-        sort(house, from, to, l);
-        from = to;
-        // to = from;
-      }
-    }
-    if (l === 2) {
-      console.log("finnish", house);
-      break;
-    }
+  if (j === 1) console.log(houses[j]);
+  if (houses[j].length === 0) continue;
+  let y = 0;
+  while (y !== 5) {
+    houses[j] = group([...houses[j]], y);
+    y++;
   }
-}
-const final = houses.reverse().flatMap((x) => x.reverse());
-// console.log(houses);
-// console.log("", final);
-final.forEach((element, index) => {
-  s += (index + 1) * +element.bid;
-});
-console.log(s);
-function slice(s: string, c: number) {
-  return s.slice(0, c);
+
+  if (j === 1) console.log(houses[j]);
 }
 function sort(house: House[], from: number, to: number, slice: number) {
   for (let i = from; i <= to; i++) {
@@ -79,6 +87,7 @@ function sort(house: House[], from: number, to: number, slice: number) {
       }
     }
   }
+  return house;
 }
 
 // console.log(hands);
@@ -117,6 +126,7 @@ function findHouse(strings: string[]): number {
 }
 // submitted answers for part 1
 // 252877749
+// 253204949
 // 253204949
 
 // submitted answers for part 2
