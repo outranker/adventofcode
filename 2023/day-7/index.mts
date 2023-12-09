@@ -30,78 +30,39 @@ for (let i = 0; i < array.length; i++) {
   const houseIndex = findHouse(hand.split(""));
   houses.at(houseIndex)!.push({ hand, bid });
 }
-function group(hs: House[], y: number) {
-  let m = 0;
-  let st = "";
-  let from = m;
-  let to = m;
-  let c = 0;
-  while (m !== hs.length) {
-    if (to === from) {
-      st = sliceEndIncluded(hs[m].hand, y);
-      m++;
-      to = m;
-      continue;
-    }
-    console.log(
-      ">>>>>>>>>>>>>>>>>",
-      st,
-      sliceEndIncluded(hs[m].hand, y),
-      from,
-      to
-    );
-    if (st === sliceEndIncluded(hs[m].hand, y)) {
-      if (m + 1 === hs.length) {
-        if (c) {
-          sort(hs, from, to, y + 1);
-        }
-      }
-      c++;
-      m++;
-      to = m;
-    } else {
-      console.log("coming here", c);
-      if (c >= 1) {
-        console.log(">>><<<<<<<<<<<<<>>>>>>>>>>>>>>.", c);
-        sort(hs, from, to, y + 1);
-      }
-      c = 0;
-      from = m;
-      st = sliceEndIncluded(hs[m].hand, y);
-      m++;
-      to = m;
-    }
-  }
-}
 for (let j = 0; j < houses.length; j++) {
-  console.log("before", houses[j]);
   houses[j].sort(
     (a, b) =>
       strength[a.hand[0] as keyof typeof strength] -
       strength[b.hand[0] as keyof typeof strength]
   );
-  console.log("after", houses[j]);
   if (houses[j].length === 0) continue;
-  let y = 0;
-  while (y !== 5) {
-    group(houses[j], y);
-    y++;
+  for (let l = 1; l < 5; l++) {
+    let flag = 0;
+    for (let k = 1; k < houses[j].length; k++) {
+      const house = houses[j][k];
+      if (house.hand.slice(0, l) !== houses[j][k - 1].hand.slice(0, l)) {
+        sort(houses[j], flag, k, l);
+        flag = l;
+      } else {
+        if (k === houses[j].length - 1) {
+          sort(houses[j], flag, k, l);
+        }
+      }
+    }
   }
 }
-
 console.log(houses);
 const final = houses.reverse().flatMap((x) => x.reverse());
-// const final = houses.flat();
-// console.log(houses);
-// console.log("", final);
+console.log("after", houses);
 final.forEach((element, index) => {
   s += (index + 1) * +element.bid;
 });
+
 console.log("total:", s);
 
 function sort(house: House[], from: number, to: number, slice: number) {
   if (from === to) return;
-  // console.log(first);
   for (let i = from; i <= to; i++) {
     for (let j = i + 1; j <= to; j++) {
       if (
@@ -114,18 +75,6 @@ function sort(house: House[], from: number, to: number, slice: number) {
       }
     }
   }
-  // for (let i = from; i <= to; i++) {
-  //   for (let j = from; j <= to - i - 1; j++) {
-  //     if (
-  //       strength[house[j].hand[slice] as keyof typeof strength] <
-  //       strength[house[j + 1].hand[slice] as keyof typeof strength]
-  //     ) {
-  //       const temp = house[j];
-  //       house[j] = house[j + 1];
-  //       house[j + 1] = temp;
-  //     }
-  //   }
-  // }
 }
 
 // ************** part 2 ***********
