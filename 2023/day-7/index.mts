@@ -22,9 +22,6 @@ const strength = {
   2: 1,
 } as const;
 
-function sliceEndIncluded(s: string, c: number) {
-  return s.slice(0, c + 1);
-}
 for (let i = 0; i < array.length; i++) {
   const [hand, bid] = array[i].split(" ");
   const houseIndex = findHouse(hand.split(""));
@@ -42,18 +39,22 @@ for (let j = 0; j < houses.length; j++) {
     for (let k = 1; k < houses[j].length; k++) {
       const house = houses[j][k];
       if (house.hand.slice(0, l) !== houses[j][k - 1].hand.slice(0, l)) {
-        sort(houses[j], flag, k, l);
-        flag = l;
+        if (k - 1 !== flag) {
+          sort(houses[j], flag, k - 1, l);
+        }
+        flag = k;
       } else {
         if (k === houses[j].length - 1) {
-          sort(houses[j], flag, k, l);
+          if (k - 1 !== flag) {
+            sort(houses[j], flag, k, l);
+          }
         }
       }
     }
   }
 }
 console.log(houses);
-const final = houses.reverse().flatMap((x) => x.reverse());
+const final = houses.reverse().flat();
 console.log("after", houses);
 final.forEach((element, index) => {
   s += (index + 1) * +element.bid;
