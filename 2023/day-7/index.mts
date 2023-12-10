@@ -22,38 +22,14 @@ const strength = {
   2: 1,
 } as const;
 
-function sliceEndIncluded(s: string, c: number) {
-  return s.slice(0, c + 1);
-}
 for (let i = 0; i < array.length; i++) {
   const [hand, bid] = array[i].split(" ");
   const houseIndex = findHouse(hand.split(""));
   houses.at(houseIndex)!.push({ hand, bid });
 }
-for (let j = 0; j < houses.length; j++) {
-  houses[j].sort(
-    (a, b) =>
-      strength[a.hand[0] as keyof typeof strength] -
-      strength[b.hand[0] as keyof typeof strength]
-  );
-  if (houses[j].length === 0) continue;
-  for (let l = 1; l < 5; l++) {
-    let flag = 0;
-    for (let k = 1; k < houses[j].length; k++) {
-      const house = houses[j][k];
-      if (house.hand.slice(0, l) !== houses[j][k - 1].hand.slice(0, l)) {
-        sort(houses[j], flag, k, l);
-        flag = l;
-      } else {
-        if (k === houses[j].length - 1) {
-          sort(houses[j], flag, k, l);
-        }
-      }
-    }
-  }
-}
+rank(houses);
 console.log(houses);
-const final = houses.reverse().flatMap((x) => x.reverse());
+const final = houses.reverse().flat();
 console.log("after", houses);
 final.forEach((element, index) => {
   s += (index + 1) * +element.bid;
@@ -77,6 +53,34 @@ function sort(house: House[], from: number, to: number, slice: number) {
   }
 }
 
+function rank(houses: House[][]) {
+  for (let j = 0; j < houses.length; j++) {
+    houses[j].sort(
+      (a, b) =>
+        strength[a.hand[0] as keyof typeof strength] -
+        strength[b.hand[0] as keyof typeof strength]
+    );
+    if (houses[j].length === 0) continue;
+    for (let l = 1; l < 5; l++) {
+      let flag = 0;
+      for (let k = 1; k < houses[j].length; k++) {
+        const house = houses[j][k];
+        if (house.hand.slice(0, l) !== houses[j][k - 1].hand.slice(0, l)) {
+          if (k - 1 !== flag) {
+            sort(houses[j], flag, k - 1, l);
+          }
+          flag = k;
+        } else {
+          if (k === houses[j].length - 1) {
+            if (k - 1 !== flag) {
+              sort(houses[j], flag, k, l);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // ************** part 2 ***********
 function findHouse(strings: string[]): number {
   const obj: Record<string, number> = {};
