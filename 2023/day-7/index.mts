@@ -1,4 +1,4 @@
-const t = await Deno.readTextFile("2023/day-7/data-test.txt");
+const t = await Deno.readTextFile("2023/day-7/data.txt");
 
 type House = { hand: string; bid: string };
 const array: string[] = t.split("\n");
@@ -188,19 +188,23 @@ function countOccurance(strings: string[]) {
   }
   return c;
 }
-function getObjKey(obj: Record<string, number>) {
-  return Object.keys(obj)[0];
+function getTheOtherKey(obj: Record<string, number>) {
+  return Object.keys(obj)[0] !== "J"
+    ? Object.keys(obj)[0]
+    : Object.keys(obj)[1];
 }
-function getObjKeyWithHighestOccurance(obj: Record<string, number>) {
+function getObjKeyWithHighestOccuranceWhichIsNotJ(obj: Record<string, number>) {
   const keys = Object.keys(obj).filter((i) => i);
-  let highestOccurenceKey = keys[0];
+  let highestOccurenceKey;
   for (let i = 0; i < keys.length; i++) {
     const key = keys[i];
+    if (key === "J") continue;
+    if (!highestOccurenceKey) highestOccurenceKey = key;
     if (obj[key] > obj[highestOccurenceKey]) {
       highestOccurenceKey = key;
     }
   }
-  return highestOccurenceKey;
+  return highestOccurenceKey as string;
 }
 // ************** part 2 ***********
 function findHouse(strings: string[]): number {
@@ -218,21 +222,22 @@ function findHouse(strings: string[]): number {
     switch (jCount) {
       case 1:
         delete obj.J;
-        obj[getObjKeyWithHighestOccurance(obj)] =
-          obj[getObjKeyWithHighestOccurance(obj)] + 1;
+        obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] =
+          obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] + 1;
         break;
       case 2:
         delete obj.J;
-        obj[getObjKeyWithHighestOccurance(obj)] =
-          obj[getObjKeyWithHighestOccurance(obj)] + 2;
+        obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] =
+          obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] + 2;
         break;
       case 3:
-        obj[getObjKeyWithHighestOccurance(obj)] =
-          obj[getObjKeyWithHighestOccurance(obj)] + 3;
+        delete obj.J;
+        obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] =
+          obj[getObjKeyWithHighestOccuranceWhichIsNotJ(obj)] + 3;
         break;
       case 4:
         delete obj.J;
-        obj[getObjKey(obj)] = 5;
+        obj[getTheOtherKey(obj)] = 5;
         break;
       case 5:
         break;
@@ -241,10 +246,8 @@ function findHouse(strings: string[]): number {
 
   let m = 0;
   for (const [_key, value] of Object.entries(obj)) {
-    console.log({ _key, value });
     m = m + value * value;
   }
-  console.log(obj);
   switch (m) {
     case 25:
       return 0;
@@ -276,3 +279,4 @@ function findHouse(strings: string[]): number {
 // 253768376 -> too low
 // 253370359 -> too low
 // 253070461 -> too low
+// 253907829
