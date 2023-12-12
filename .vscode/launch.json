@@ -8,7 +8,7 @@
       "request": "launch",
       "name": "advent of code",
       "type": "node",
-      "program": "${workspaceFolder}/2023/day-7/index.mts",
+      "program": "${workspaceFolder}/2023/day-9/index.mts",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "/Users/justin/.dvm/bin/deno",
       "runtimeArgs": ["run", "--unstable", "--inspect-wait", "--allow-all"],

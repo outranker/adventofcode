@@ -1,5 +1,5 @@
 function readInput() {
-  const t = Deno.readTextFileSync("2023/day-9/data.txt");
+  const t = Deno.readTextFileSync("2023/day-10/data-test.txt");
   const array: string[] = t.split("\n");
   console.log("length: ", array.length);
   return array;
@@ -85,7 +85,7 @@ function partTwo(parsedValue: number[][]) {
 }
 const parsedInput = readInput();
 const parsedValue = parseValue(parsedInput);
-// console.log("Part One: ", partOne([...parsedValue]));
+console.log("Part One: ", partOne([...parsedValue]));
 console.log("Part Two: ", partTwo([...parsedValue]));
 // ************** part 2 ***********
 
