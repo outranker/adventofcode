@@ -6,93 +6,82 @@ function readInput() {
 }
 function parseValue(input: string[]) {
   return input.map((line, _index) => {
-    return line
-      .split(" ")
-      .filter((l) => l !== "")
-      .map(Number);
+    return line.split("");
   });
 }
-function partOne(parsedValue: number[][]) {
+type Universe = Array<Array<"." | "#">>;
+function expandUniverse(universe: Universe) {
+  const height = universe.length;
+  const width = universe[0].length;
+  const widthCoords: number[] = [];
+  const heightCoords: number[] = [];
+  for (let i = 0; i < height - 1; i++) {
+    let isEmpty = true;
+    for (let k = 0; k < width - 1; k++) {
+      if (universe[i][k] !== ".") isEmpty = false;
+    }
+    if (isEmpty) widthCoords.push(i);
+  }
+  for (let j = 0; j < width - 1; j++) {
+    let isEmpty = true;
+    for (let m = 0; m < height - 1; m++) {
+      if (universe[m][j] !== ".") isEmpty = false;
+    }
+    if (isEmpty) heightCoords.push(j);
+  }
+  for (let n = 0; n < widthCoords.length; n++) {
+    universe.splice(
+      widthCoords[n],
+      0,
+      Array.from(
+        { length: width },
+        () => new Array(".")
+      ) as unknown as Universe[number]
+    );
+  }
+  for (let p = 0; p < heightCoords.length; p++) {
+    for (let v = 0; v < universe.length; v++) {
+      universe[v].splice(heightCoords[p], 0, ".");
+    }
+  }
+  console.log({ widthCoords, heightCoords });
+  return universe;
+}
+
+function findPath(a: any, b: any) {}
+
+function partOne(parsedValue: string[][]) {
   let sumOne = 0;
-  parsedValue.forEach((line, _index) => {
-    const numbers = line;
-
-    let lineCurrent = numbers;
-    const triangle: number[][] = [lineCurrent];
-    let isAllZeros = false;
-
-    while (!isAllZeros) {
-      const someArr: number[] = [];
-      for (let cursor = 0; cursor < lineCurrent.length - 1; cursor++) {
-        const diffNum = lineCurrent[cursor + 1] - lineCurrent[cursor];
-        someArr.push(diffNum);
-      }
-      lineCurrent = someArr;
-      if (new Set(someArr).size === 1 && new Set(someArr).has(0)) {
-        isAllZeros = true;
-      }
-      triangle.push(someArr);
-    }
-    let curr = 0;
-    for (let i = triangle.length - 1; i >= 0; i--) {
-      const t = triangle[i];
-      if (t.at(-1) === 0) {
-        curr = 0;
-      } else {
-        curr = t[i] + curr;
-        sumOne += t.at(-1) as number;
-        curr = t.at(-1) as number;
-      }
-    }
-  });
+  const expandedUniverse = expandUniverse(parsedValue as Universe);
+  console.log(expandedUniverse.length);
+  // printUniverseJustInCase(structuredClone(expandedUniverse));
+  // parsedValue.forEach((line: string, _index: number) => {});
   return sumOne;
 }
-function partTwo(parsedValue: number[][]) {
+
+function partTwo(parsedValue: any) {
   let sumTwo = 0;
-  parsedValue.forEach((line, _index) => {
-    const numbers = line;
-
-    let lineCurrent = numbers;
-    const triangle: number[][] = [lineCurrent];
-    let isAllZeros = false;
-
-    while (!isAllZeros) {
-      const someArr: number[] = [];
-      for (let cursor = 0; cursor < lineCurrent.length - 1; cursor++) {
-        const diffNum = lineCurrent[cursor + 1] - lineCurrent[cursor];
-        someArr.push(diffNum);
-      }
-      lineCurrent = someArr;
-      if (new Set(someArr).size === 1 && new Set(someArr).has(0)) {
-        isAllZeros = true;
-      }
-      triangle.push(someArr);
-    }
-    let curr = 0;
-    for (let i = triangle.length - 1; i >= 0; i--) {
-      const t = triangle[i];
-      if (i === triangle.length - 1) {
-        curr = 0;
-      } else {
-        curr = t[0] - curr;
-      }
-      if (i === 0) {
-        sumTwo += curr;
-      }
-    }
-  });
+  parsedValue.forEach((line: string, _index: number) => {});
   return sumTwo;
 }
+
+function printUniverseJustInCase(universe: Universe) {
+  let u = "";
+  for (let s = 0; s < universe.length; s++) {
+    const element = universe[s];
+    u = (u + element.join("") + "\n") as string;
+  }
+  console.log(u);
+}
+
 const parsedInput = readInput();
 const parsedValue = parseValue(parsedInput);
-// console.log("Part One: ", partOne([...parsedValue]));
-console.log("Part Two: ", partTwo([...parsedValue]));
+
+console.log("Part One: ", partOne([...parsedValue]));
+// console.log("Part Two: ", partTwo([...parsedValue]));
+
 // ************** part 2 ***********
 
 // submitted answers for part 1
-// 2101499000
 
 // submitted answers for part 2
-// 21143
-// 2127 -> too high
-// 2
