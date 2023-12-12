@@ -1,5 +1,5 @@
 function readInput() {
-  const t = Deno.readTextFileSync("2023/day-11/data.txt");
+  const t = Deno.readTextFileSync("2023/day-11/data-test.txt");
   const array: string[] = t.split("\n");
   console.log("length: ", array.length);
   return array;
@@ -15,46 +15,59 @@ function expandUniverse(universe: Universe) {
   const width = universe[0].length;
   const widthCoords: number[] = [];
   const heightCoords: number[] = [];
-  for (let i = 0; i < height - 1; i++) {
+  for (let i = 0; i < height; i++) {
     let isEmpty = true;
-    for (let k = 0; k < width - 1; k++) {
-      if (universe[i][k] !== ".") isEmpty = false;
+    for (let k = 0; k < width; k++) {
+      if (universe[i][k] !== ".") {
+        isEmpty = false;
+      }
     }
     if (isEmpty) widthCoords.push(i);
   }
-  for (let j = 0; j < width - 1; j++) {
+  for (let j = 0; j < width; j++) {
     let isEmpty = true;
-    for (let m = 0; m < height - 1; m++) {
+    for (let m = 0; m < height; m++) {
       if (universe[m][j] !== ".") isEmpty = false;
     }
     if (isEmpty) heightCoords.push(j);
   }
+  widthCoords.sort((a, b) => b - a);
+  heightCoords.sort((a, b) => b - a);
   for (let n = 0; n < widthCoords.length; n++) {
     universe.splice(
       widthCoords[n],
       0,
       Array.from(
         { length: width },
-        () => new Array(".")
-      ) as unknown as Universe[number]
+        () => new Array("."),
+      ) as unknown as Universe[number],
     );
   }
   for (let p = 0; p < heightCoords.length; p++) {
-    for (let v = 0; v < universe.length; v++) {
+    for (let v = universe.length - 1; v >= 0; v--) {
       universe[v].splice(heightCoords[p], 0, ".");
     }
   }
-  console.log({ widthCoords, heightCoords });
   return universe;
 }
-
+function findHashCoordinates(universe: Universe) {
+  const hashCoords: [number, number][] = [];
+  for (let i = 0; i < universe.length; i++) {
+    for (let j = 0; j < universe[i].length; j++) {
+      if (universe[i][j] === "#") hashCoords.push([i, j]);
+    }
+  }
+  return hashCoords;
+}
 function findPath(a: any, b: any) {}
 
 function partOne(parsedValue: string[][]) {
   let sumOne = 0;
+  // printUniverseJustInCase(structuredClone(parsedValue));
   const expandedUniverse = expandUniverse(parsedValue as Universe);
-  console.log(expandedUniverse.length);
-  // printUniverseJustInCase(structuredClone(expandedUniverse));
+  const hashCoords = findHashCoordinates(expandedUniverse);
+  printUniverseJustInCase(structuredClone(expandedUniverse));
+  console.log(expandedUniverse.length, expandedUniverse[0].length);
   // parsedValue.forEach((line: string, _index: number) => {});
   return sumOne;
 }
