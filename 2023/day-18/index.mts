@@ -1,5 +1,3 @@
-import transform from "https://deno.land/x/lodash@4.17.15-es/transform.js";
-
 function readInput() {
     const t = Deno.readTextFileSync("2023/day-18/data.txt");
     const array: string[] = t.split("\n");
@@ -68,40 +66,80 @@ function calculateTrenchArea(trench: TrenchMap) {
     let t = 0;
 
     for (let i = 0; i < trench.length; i++) {
-        let a = 0;
-        let s = undefined;
-        let e = undefined;
         for (let j = 0; j < trench[i].length; j++) {
-            if (trench[i][j] === "#") {
-                if (s === undefined) {
-                    s = j;
-                } else {
-                    if (trench[i][j + 1] !== "#") {
-                        e = j;
-                        t += e - s + 1;
-                        s = undefined;
-                        e = undefined;
-                        a++;
-                    }
-                }
+            if (trench[i][j] === "#" || trench[i][j] === ".") {
+                t++;
             }
         }
     }
     return t;
 }
-type TrenchMap = ["." | "#"][];
-type PartOneArgs = MyParseType;
-const Directions = { left: "L", right: "R", up: "U", down: "D" } as const;
-type Direction = (typeof Directions)[keyof typeof Directions];
-type Coords = Record<"currX" | "currY", number>;
-function partOne(input: PartOneArgs) {
-    let sumOne = 0;
-    const trenchWarfare: TrenchMap = [[] as unknown as TrenchMap[number]];
-    const coords: Coords = {
-        currX: 0,
-        currY: 0,
-    };
+function paintOutsideTheBorders(trench: TrenchMap) {
+    for (let i = 0; i < trench.length; i++) {
+        for (let j = 0; j < trench[0].length; j++) {
+            if (trench[i][j] === ".") {
+                trench[i][j] = "0";
+            } else break;
+        }
+    }
+    for (let i = 0; i < trench[0].length; i++) {
+        for (let j = 0; j < trench.length; j++) {
+            if (trench[j][i] === "." || trench[j][i] === "0") {
+                trench[j][i] = "0";
+            } else break;
+        }
+    }
+    // from right to left
+    for (let j = 0; j < trench.length; j++) {
+        for (let i = trench[0].length - 1; i >= 0; i--) {
+            if (trench[j][i] === "." || trench[j][i] === "0") {
+                trench[j][i] = "0";
+            } else break;
+        }
+    }
+    for (let i = 0; i < trench[0].length; i++) {
+        for (let j = trench.length - 1; j >= 0; j--) {
+            if (trench[j][i] === "." || trench[j][i] === "0") {
+                trench[j][i] = "0";
+            } else break;
+        }
+    }
+}
+function isThisFloodFill(trench: TrenchMap) {
+    let cp = 0;
+    let stop = false;
+    while (stop === false) {
+        let encountered = false;
+        for (let i = 0; i < trench.length; i++) {
+            for (let j = 0; j < trench[0].length; j++) {
+                if (trench[i][j] === "0") {
+                    if (trench[i][j - 1] === ".") {
+                        trench[i][j - 1] = "0";
+                        encountered = true;
+                    } else if (trench[i][j + 1] === ".") {
+                        trench[i][j + 1] = "0";
+                        encountered = true;
+                    } else if (trench[i - 1]?.[j] === ".") {
+                        trench[i - 1]?.[j] && (trench[i - 1][j] = "0");
+                        encountered = true;
+                    } else if (trench[i + 1]?.[j] === ".") {
+                        trench[i + 1]?.[j] && (trench[i + 1][j] = "0");
+                        encountered = true;
+                    }
+                }
+            }
+        }
+        if (encountered === false) {
+            stop = true;
+        }
+        cp++;
+        if (cp % 10_000 === 0) console.log(cp);
+    }
+}
+function digUpTrenches(trenchWarfare: TrenchMap, coords: Coords, input: PartOneArgs) {
+    let cc = 0;
     for (const [direction, depth] of input) {
+        if (cc % 10 === 0) console.log(cc);
         if (direction === "D") {
             let d = +depth;
             if (coords.currY !== trenchWarfare.length - 1) {
@@ -156,32 +194,83 @@ function partOne(input: PartOneArgs) {
                 expandEasternTrenches(trenchWarfare, coords, d);
             }
         }
-        printTrenchMapJustInCase(trenchWarfare);
+        cc++;
     }
+}
+type TrenchMap = ["." | "#" | "0"][];
+type PartOneArgs = MyParseType;
+const Directions = { left: "L", right: "R", up: "U", down: "D" } as const;
+type Direction = (typeof Directions)[keyof typeof Directions];
+type Coords = Record<"currX" | "currY", number>;
+function partOne(input: PartOneArgs) {
+    let sumOne = 0;
+    const trenchWarfare: TrenchMap = [[] as unknown as TrenchMap[number]];
+    const coords: Coords = {
+        currX: 0,
+        currY: 0,
+    };
+    digUpTrenches(trenchWarfare, coords, input);
+    paintOutsideTheBorders(trenchWarfare);
+    isThisFloodFill(trenchWarfare);
+    printTrenchMapJustInCase(trenchWarfare, "map2.txt");
     sumOne += calculateTrenchArea(trenchWarfare);
     return sumOne;
 }
-function printTrenchMapJustInCase(trench: TrenchMap) {
+function printTrenchMapJustInCase(trench: TrenchMap, filename: string) {
     let m = "";
     for (const line of trench) {
         m += line.join("") + "\n";
     }
-    Deno.writeFileSync("map.txt", new TextEncoder().encode(m));
+    Deno.writeFileSync(filename, new TextEncoder().encode(m));
     // console.log(m);
 }
-type PartTwoArgs = any;
+function convertHexToMapDirections(input: PartTwoArgs) {
+    const newInput: MyParseType = [];
+    let c = 0;
+    for (const [direction, depth, hex] of input) {
+        newInput.push([] as unknown as MyParseType[number]);
+        if (hex.at(-2)! === "0") {
+            newInput[c].push(Directions.right);
+        } else if (hex.at(-2) === "1") {
+            newInput[c].push(Directions.down);
+        } else if (hex.at(-2) === "2") {
+            newInput[c].push(Directions.left);
+        } else {
+            newInput[c].push(Directions.up);
+        }
+        newInput[c].push("" + parseInt(hex.slice(2, 7), 16));
+        c++;
+    }
+    return newInput;
+}
+type PartTwoArgs = PartOneArgs;
 function partTwo(parsedValue: PartTwoArgs) {
     let sumTwo = 0;
+    const trenchWarfare: TrenchMap = [[] as unknown as TrenchMap[number]];
+    const coords: Coords = {
+        currX: 0,
+        currY: 0,
+    };
+    const input = convertHexToMapDirections(parsedValue);
+    console.log(input);
+    digUpTrenches(trenchWarfare, coords, input);
+    console.log("digging up finished");
+    paintOutsideTheBorders(trenchWarfare);
+    isThisFloodFill(trenchWarfare);
+    // printTrenchMapJustInCase(trenchWarfare, "map2.txt");
+    sumTwo += calculateTrenchArea(trenchWarfare);
+
     return sumTwo;
 }
 const data1 = readInput();
 const data2 = parse(data1);
 console.log("Part One: ", partOne(structuredClone(data2)));
-// console.log("Part Two: ", partTwo(structuredClone(parsedValue)));
+// console.log("Part Two: ", partTwo(structuredClone(data2)));
 
 // submitted answers for part 1
 // 50005 - too low
 // 19274 - too low
-// 55169
+// 55169 - wrong answer
+// 66993
 
 // submitted answers for part 2
