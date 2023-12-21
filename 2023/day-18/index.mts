@@ -86,8 +86,6 @@ function calculateTrenchArea(trench: TrenchMap) {
                 }
             }
         }
-        if (a > 5) console.log(a);
-        // console.log(arr);
     }
     return t;
 }
@@ -141,7 +139,7 @@ function partOne(input: PartOneArgs) {
                 }
             }
             if (d !== 0) {
-                expandWesternTrenches(trenchWarfare, coords, +depth);
+                expandWesternTrenches(trenchWarfare, coords, d);
             }
         } else {
             // R
@@ -154,15 +152,11 @@ function partOne(input: PartOneArgs) {
                     if (d === 0) break;
                 }
             }
-            if (+depth === 5) console.log({ x: coords.currX, y: coords.currY });
             if (d !== 0) {
-                expandEasternTrenches(trenchWarfare, coords, +depth);
+                expandEasternTrenches(trenchWarfare, coords, d);
             }
-
-            if (+depth === 5) console.log({ x: coords.currX, y: coords.currY });
         }
         printTrenchMapJustInCase(trenchWarfare);
-        console.log("hello");
     }
     sumOne += calculateTrenchArea(trenchWarfare);
     return sumOne;
@@ -188,5 +182,6 @@ console.log("Part One: ", partOne(structuredClone(data2)));
 // submitted answers for part 1
 // 50005 - too low
 // 19274 - too low
+// 55169
 
 // submitted answers for part 2
