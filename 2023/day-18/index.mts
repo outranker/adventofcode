@@ -133,26 +133,21 @@ function isThisFloodFill(trench: TrenchMap) {
             stop = true;
         }
         cp++;
-        if (cp % 10_000 === 0) console.log(cp);
     }
 }
-function digUpTrenches2(trenchWarfare: TrenchMap, coords: Coords, input: PartOneArgs) {
+function digUpTrenches2(coords: Coords, input: PartOneArgs) {
     let cc = 0;
-    const vertices: [number, number][] = [];
+    const vertices: [number, number][] = [[0, 0]];
     for (const [direction, depth] of input) {
+        const d = +depth;
         if (direction === "D") {
-            const d = +depth;
             coords.currY += d;
         } else if (direction === "U") {
-            const d = +depth;
             coords.currY -= d;
-            vertices;
         } else if (direction === "L") {
-            const d = +depth;
             coords.currX -= d;
         } else {
             // R
-            const d = +depth;
             coords.currX += d;
         }
         cc++;
@@ -164,7 +159,6 @@ function digUpTrenches(trenchWarfare: TrenchMap, coords: Coords, input: PartOneA
     let cc = 0;
     const vertices: [number, number][] = [];
     for (const [direction, depth] of input) {
-        if (cc % 10 === 0) console.log(cc);
         if (direction === "D") {
             let d = +depth;
             if (coords.currY !== trenchWarfare.length - 1) {
@@ -270,37 +264,30 @@ function convertHexToMapDirections(input: PartTwoArgs) {
     }
     return newInput;
 }
+
 function shoelaces(vertices: ReturnType<typeof digUpTrenches>) {
     let sum = 0;
     for (let i = 0; i < vertices.length - 1; i++) {
-        sum += ((vertices[i + 1][0] - vertices[i][0]) * (vertices[i + 1][1] + vertices[i][1])) / 2;
+        sum += vertices[i][0] * vertices[i + 1][1];
+        sum -= vertices[i][1] * vertices[i + 1][0];
     }
-    return sum;
-    let area = 0;
-    for (let i = 0; i < vertices.length - 1; i++) {
-        area += vertices[i][0] * vertices[i + 1][1] - vertices[i][1] * vertices[i + 1][0];
-    }
-    return area;
+    return Math.abs(sum) * 0.5;
 }
+
 type PartTwoArgs = PartOneArgs;
 function partTwo(parsedValue: PartTwoArgs) {
     let sumTwo = 0;
-    const trenchWarfare: TrenchMap = [[] as unknown as TrenchMap[number]];
     const coords: Coords = { currX: 0, currY: 0 };
     const input = convertHexToMapDirections(parsedValue);
-    console.log(input);
-    const vertices = digUpTrenches2(trenchWarfare, coords, input);
-    console.log(JSON.stringify(vertices, null, 2));
-    // we need to remove the first one since we don't know if it's a corner or not
-    // vertices.shift();
-    vertices.pop();
-    sumTwo = shoelaces(vertices);
+    const vertices = digUpTrenches2(coords, input);
 
-    return sumTwo;
+    sumTwo += shoelaces(vertices);
+    const length = input.reduce((acc, cmd) => acc + +cmd[1], 0);
+    return sumTwo + length / 2 + 1;
 }
 const data1 = readInput();
 const data2 = parse(data1);
-// console.log("Part One: ", partOne(structuredClone(data2)));
+console.log("Part One: ", partOne(structuredClone(data2)));
 console.log("Part Two: ", partTwo(structuredClone(data2)));
 
 // submitted answers for part 1
@@ -312,4 +299,7 @@ console.log("Part Two: ", partTwo(structuredClone(data2)));
 // submitted answers for part 2
 // 354487289353734 - too high
 // 354491768799110 - too high
-// 177243644676867
+// 177243644676867 - too low
+// 177243763226641
+// 177246002949329
+// 177243763226648 - correct answer
