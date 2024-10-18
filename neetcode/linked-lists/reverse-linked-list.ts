@@ -1,6 +1,3 @@
-import customDefaultsAssignIn from "https://deno.land/x/lodash@4.17.15-es/_customDefaultsAssignIn.js";
-import { assert } from "../../util/assert.mts";
-
 class ListNode {
     val: number;
     next: null | ListNode;
@@ -65,6 +62,20 @@ class Solution {
         return prev as unknown as ListNode;
     }
 
+    static recursiveSolution(head: ListNode): ListNode {
+        if (!head) return head;
+        if (head.next === null) return head;
+
+        let newHead = head;
+        if (head.next !== null) {
+            newHead = this.recursiveSolution(head.next);
+            head.next.next = head;
+        }
+        head.next = null;
+
+        return newHead;
+    }
+
     static fromArrayToList(args: number[]): ListNode {
         let linkedList: ListNode | null = null;
         for (const n of args) {
@@ -82,4 +93,4 @@ class Solution {
     }
 }
 
-console.log(Solution.iterativeSolution(Solution.fromArrayToList([0, 1, 2, 3])));
+console.log(Solution.recursiveSolution(Solution.fromArrayToList([0, 1, 2, 3])));
