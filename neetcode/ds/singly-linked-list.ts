@@ -1,63 +1,56 @@
 export class SinglyLinkedList {
-    list: SinglyLinkedList | null;
     val: number;
     next: SinglyLinkedList | null;
     constructor(n: number) {
         this.val = n;
         this.next = null;
-        this.list = null;
     }
     append(val: number) {
-        if (this.list === null) {
-            this.list = new SinglyLinkedList(val);
-        } else {
-            let c = this.list;
-            const n = new SinglyLinkedList(val);
-            while (c.next !== null) {
-                c = c.next;
-            }
-            c.next = n;
+        if (this.val === null) {
+            this.val = val;
+            return;
         }
+        const n = new SinglyLinkedList(val);
+        if (this.next === null) {
+            this.next = n;
+            return;
+        }
+        let c = this.next;
+        while (c.next !== null) {
+            c = c.next;
+        }
+        c.next = n;
     }
     prepend(val: number) {
-        if (this.list === null) {
-            this.list = new SinglyLinkedList(val);
-        } else {
-            const n = new SinglyLinkedList(val);
-            n.next = this.list;
-            this.list = n;
-        }
+        const n = new SinglyLinkedList(this.val);
+        n.next = this.next;
+        this.val = val;
+        this.next = n;
     }
-    /**
-     * @description if index doesn't exist appends to the tail of list
-     */
-    insertAt(value: number, index: number) {
-        let i = 0;
-        if (this.list === null) {
-            this.list = new SinglyLinkedList(value);
-            return;
-        }
-        if (this.list.next === null) {
-            this.list.next = new SinglyLinkedList(value);
-            return;
-        }
-        let c = this.list;
-        while (c.next !== null) {
-            i++;
-            c = c.next;
+    reverse() {
+        let newList = new SinglyLinkedList(this.val);
+        let next = this.next;
 
-            if (i === index - 1) {
-                const t = c.next;
-                c.next = new SinglyLinkedList(value);
-                c.next.next = t;
-                return;
-            }
+        while (next !== null) {
+            const t = newList;
+            newList = new SinglyLinkedList(next.val);
+            newList.next = t;
+            next = next.next;
         }
-        c.next = new SinglyLinkedList(value);
-        return;
+        this.val = newList.val;
+        this.next = newList.next;
     }
-    removeAt(value: number, index: number) {}
-    getAt(index: number) {}
-    reverse() {}
-    isEmpty() {}
+    isEmpty() {
+        if (this.val === null) return false;
+        return true;
+    }
 }
+
+const l = new SinglyLinkedList(1);
+l.append(2);
+l.append(3);
+l.append(4);
+l.prepend(0);
+l.reverse();
+
+console.log(l);
